@@ -44,7 +44,7 @@ const Navigation = () => {
             to="/"
             className="text-xl font-bold tracking-wider text-foreground hover:opacity-70 transition-opacity duration-300"
           >
-            VRTEXLABS
+            VRTEXGLOBAL
           </Link>
 
           {/* Desktop Navigation */}

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold tracking-wider mb-4">VRTEXLABS</h3>
+            <h3 className="text-2xl font-bold tracking-wider mb-4">VRTEXGLOBAL</h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md">
               Precision mechanical design solutions for forward-thinking companies.
               Engineering excellence meets innovative problem-solving.
@@ -39,7 +39,7 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li>info@vrtexlabs.com</li>
+              <li>info@vrtexglobal.com</li>
               <li>+1 (555) 123-4567</li>
               <li>San Francisco, CA</li>
             </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} VRTEXLABS. All rights reserved.
+            © {new Date().getFullYear()} VRTEXGLOBAL. All rights reserved.
           </p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <span className="text-gray-500 text-sm">Precision Engineering</span>
