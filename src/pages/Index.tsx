@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
-import heroImage from "@/assets/hero-engineering.jpg";
+import heroImage from "@/assets/hero-engineering-new.jpg";
 import { ArrowRight, Cpu, Cog, PenTool, Layers, Settings } from "lucide-react";
 
 const Index = () => {
@@ -50,7 +50,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground opacity-0-initial animate-fade-in-up">
-              VRTEXLABS
+              VRTEXGLOBAL
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground tracking-wide opacity-0-initial animate-fade-in-up delay-200">
               Precision Mechanical Design Solutions
@@ -68,7 +68,7 @@ const Index = () => {
                 </Link>
               </Button>
               <Button variant="hero-outline" size="lg" asChild>
-                <Link to="/contact">Contact VRTEXLABS</Link>
+                <Link to="/contact">Contact VRTEXGLOBAL</Link>
               </Button>
             </div>
           </div>
@@ -129,13 +129,13 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="slide-in-left">
               <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
-                Why VRTEXLABS
+                Why VRTEXGLOBAL
               </span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-foreground tracking-tight">
                 Engineering Excellence,<br />Delivered Precisely
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                At VRTEXLABS, we combine deep technical expertise with innovative
+                At VRTEXGLOBAL, we combine deep technical expertise with innovative
                 problem-solving to deliver mechanical design solutions that exceed
                 expectations. Our commitment to precision and quality ensures every
                 project meets the highest industry standards.
@@ -200,7 +200,7 @@ const Index = () => {
               Ready to Start Your Project?
             </h2>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-              Let's discuss how VRTEXLABS can bring your mechanical design vision to life
+              Let's discuss how VRTEXGLOBAL can bring your mechanical design vision to life
               with precision and innovation.
             </p>
             <div className="mt-8">

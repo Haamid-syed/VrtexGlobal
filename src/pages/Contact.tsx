@@ -4,19 +4,30 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Mail, MapPin, Phone, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Send, CheckCircle, MessageCircle } from "lucide-react";
+
+const serviceOptions = [
+  { value: "", label: "Select a service" },
+  { value: "cad", label: "CAD Modeling & Drafting" },
+  { value: "product", label: "Product & Concept Design" },
+  { value: "analysis", label: "Mechanical Analysis" },
+  { value: "prototyping", label: "Prototyping Support" },
+  { value: "manufacturing", label: "Manufacturing Drawings" },
+  { value: "other", label: "Other" },
+];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    service: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -38,9 +49,12 @@ const Contact = () => {
     // Reset after animation
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", service: "", message: "" });
     }, 3000);
   };
+
+  const whatsappNumber = "15551234567"; // Replace with actual WhatsApp number
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
     <main className="min-h-screen bg-background">
@@ -58,7 +72,7 @@ const Contact = () => {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               Ready to start your next engineering project? We'd love to hear from you.
-              Reach out and let's discuss how VRTEXLABS can help bring your vision to life.
+              Reach out and let's discuss how VRTEXGLOBAL can help bring your vision to life.
             </p>
           </AnimatedSection>
         </div>
@@ -127,6 +141,29 @@ const Contact = () => {
 
                     <div>
                       <label
+                        htmlFor="service"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Service Type
+                      </label>
+                      <select
+                        id="service"
+                        name="service"
+                        value={formData.service}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3 bg-background border border-border text-foreground focus:outline-none focus:border-foreground transition-colors duration-300 appearance-none cursor-pointer"
+                      >
+                        {serviceOptions.map((option) => (
+                          <option key={option.value} value={option.value} disabled={option.value === ""}>
+                            {option.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label
                         htmlFor="message"
                         className="block text-sm font-medium text-foreground mb-2"
                       >
@@ -186,7 +223,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground mt-1">info@vrtexlabs.com</p>
+                      <a 
+                        href="mailto:info@vrtexglobal.com"
+                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                      >
+                        info@vrtexglobal.com
+                      </a>
                     </div>
                   </div>
 
@@ -196,7 +238,29 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Phone</h3>
-                      <p className="text-muted-foreground mt-1">+1 (555) 123-4567</p>
+                      <a 
+                        href="tel:+15551234567"
+                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                      >
+                        +1 (555) 123-4567
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-foreground">
+                      <MessageCircle className="w-5 h-5 text-background" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">WhatsApp</h3>
+                      <a 
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                      >
+                        Chat with us on WhatsApp
+                      </a>
                     </div>
                   </div>
 

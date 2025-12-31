@@ -19,7 +19,7 @@ const About = () => {
               Precision Engineering,<br />Trusted Results
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              VRTEXLABS is a mechanical design services company dedicated to delivering
+              VRTEXGLOBAL is a mechanical design services company dedicated to delivering
               precision-engineered solutions for forward-thinking organizations worldwide.
             </p>
           </AnimatedSection>
@@ -41,7 +41,7 @@ const About = () => {
 
             <AnimatedSection animation="slide-in-right" delay={200}>
               <p className="text-muted-foreground leading-relaxed">
-                Founded on the principles of precision and innovation, VRTEXLABS brings
+                Founded on the principles of precision and innovation, VRTEXGLOBAL brings
                 together a team of experienced mechanical engineers, designers, and
                 problem-solvers. We specialize in transforming complex engineering
                 challenges into elegant, manufacturable solutions that drive success
@@ -111,7 +111,7 @@ const About = () => {
               Core Values
             </h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide every decision and design at VRTEXLABS
+              The principles that guide every decision and design at VRTEXGLOBAL
             </p>
           </AnimatedSection>
 
