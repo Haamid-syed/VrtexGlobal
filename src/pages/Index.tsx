@@ -55,17 +55,17 @@ const Index = () => {
     },
     {
       icon: Layers,
-      title: "Automotive Design",
+      title: "Engineering Design",
       description: "From concept to manufacturable products",
     },
     {
       icon: Cpu,
-      title: "CAD Modeling",
+      title: "Plastic Product Design",
       description: "FEA and stress analysis solutions",
     },
     {
       icon: Settings,
-      title: "Design Analysis",
+      title: "Enclosure Design",
       description: "Rapid prototyping and testing support",
     },
   ];
