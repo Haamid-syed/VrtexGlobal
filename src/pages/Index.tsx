@@ -55,17 +55,17 @@ const Index = () => {
     },
     {
       icon: Layers,
-      title: "Automotive Design",
+      title: "Engineering Design",
       description: "Specialized vehicle component and systems engineering",
     },
     {
       icon: Cpu,
-      title: "CAD Modeling",
+      title: "Plastic Product Desing",
       description: "Precision 3D modeling and technical drafting services",
     },
     {
       icon: Settings,
-      title: "Design Analysis",
+      title: "Enclosure Design",
       description: "FEA, stress analysis and performance validation",
     },
   ];
