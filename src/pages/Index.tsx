@@ -51,22 +51,22 @@ const Index = () => {
     {
       icon: PenTool,
       title: "Product Design",
-      description: "Precision 3D modeling and technical drafting",
+      description: "End-to-end product design from concept to market-ready solutions",
     },
     {
       icon: Layers,
-      title: "Engineering Design",
-      description: "From concept to manufacturable products",
+      title: "Automotive Design",
+      description: "Specialized vehicle component and systems engineering",
     },
     {
       icon: Cpu,
-      title: "Plastic Product Design",
-      description: "FEA and stress analysis solutions",
+      title: "CAD Modeling",
+      description: "Precision 3D modeling and technical drafting services",
     },
     {
       icon: Settings,
-      title: "Enclosure Design",
-      description: "Rapid prototyping and testing support",
+      title: "Design Analysis",
+      description: "FEA, stress analysis and performance validation",
     },
   ];
 
