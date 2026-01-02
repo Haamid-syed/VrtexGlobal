@@ -9,47 +9,149 @@ import {
   Settings,
   FileText,
   Wrench,
+  Box,
+  Zap,
+  Cog,
+  RotateCcw,
+  Hammer,
+  Package,
 } from "lucide-react";
 
 const services = [
   {
     icon: PenTool,
-    title: "CAD Modeling & Drafting",
+    title: "Product Design",
     description:
-      "Precision 3D CAD modeling and 2D technical drafting services using industry-standard software. We create detailed, accurate models that serve as the foundation for manufacturing and analysis.",
+      "End-to-end product design services that transform innovative ideas into market-ready solutions. We focus on functionality, aesthetics, and manufacturability to create products that stand out.",
     features: [
-      "3D solid and surface modeling",
-      "2D technical drawings",
-      "Assembly modeling",
+      "Concept development",
+      "Industrial design",
+      "User-centric design",
       "Design for manufacturing (DFM)",
     ],
   },
   {
-    icon: Layers,
-    title: "Product & Concept Design",
+    icon: Cog,
+    title: "Automotive Design",
     description:
-      "From initial ideation to refined concepts, we develop innovative product designs that balance functionality, manufacturability, and aesthetics. Our iterative approach ensures optimal results.",
+      "Specialized automotive engineering solutions for vehicle components, systems, and assemblies. We deliver designs that meet strict industry standards for performance, safety, and durability.",
     features: [
-      "Concept development",
-      "Industrial design",
-      "Design optimization",
+      "Vehicle component design",
+      "Powertrain systems",
+      "Interior & exterior parts",
+      "Compliance documentation",
+    ],
+  },
+  {
+    icon: Layers,
+    title: "Industrial Product Design",
+    description:
+      "Robust industrial product design for machinery, equipment, and heavy-duty applications. Our designs prioritize durability, efficiency, and ease of maintenance for demanding environments.",
+    features: [
+      "Heavy equipment design",
+      "Machinery components",
+      "Tooling design",
+      "Ergonomic solutions",
+    ],
+  },
+  {
+    icon: Zap,
+    title: "Electromechanical Product Design",
+    description:
+      "Integrated electromechanical design combining mechanical systems with electronic components. We create seamless solutions for devices requiring precision motion and control.",
+    features: [
+      "Actuator integration",
+      "Motor mounting design",
+      "Sensor housings",
+      "Thermal management",
+    ],
+  },
+  {
+    icon: Settings,
+    title: "Mechanical Engineering Design",
+    description:
+      "Comprehensive mechanical engineering services covering stress analysis, mechanism design, and system optimization. We ensure your designs perform reliably under real-world conditions.",
+    features: [
+      "Mechanism design",
+      "Load analysis",
       "Material selection",
+      "Performance optimization",
     ],
   },
   {
     icon: Cpu,
-    title: "Mechanical Analysis",
+    title: "CAD Modeling",
+    description:
+      "Precision 3D CAD modeling and 2D technical drafting using industry-standard software. We create detailed, accurate models that serve as the foundation for manufacturing and analysis.",
+    features: [
+      "3D solid & surface modeling",
+      "2D technical drawings",
+      "Assembly modeling",
+      "Parametric design",
+    ],
+  },
+  {
+    icon: Box,
+    title: "Plastic Product Design",
+    description:
+      "Expert plastic part design optimized for injection molding and other manufacturing processes. We focus on material selection, wall thickness, and tooling considerations for cost-effective production.",
+    features: [
+      "Injection mold design",
+      "Draft angle optimization",
+      "Wall thickness analysis",
+      "Material selection",
+    ],
+  },
+  {
+    icon: FileText,
+    title: "Sheet Metal Design",
+    description:
+      "Specialized sheet metal design for enclosures, brackets, and structural components. Our designs consider bend radii, material properties, and manufacturing constraints for optimal fabrication.",
+    features: [
+      "Enclosure design",
+      "Bracket & frame design",
+      "Flat pattern development",
+      "Bend analysis",
+    ],
+  },
+  {
+    icon: Package,
+    title: "Product Development",
+    description:
+      "Full-cycle product development from initial concept through production launch. We guide your project through every phase, ensuring quality deliverables and timely milestones.",
+    features: [
+      "Concept to production",
+      "Prototype iteration",
+      "Design validation",
+      "Production support",
+    ],
+  },
+  {
+    icon: Wrench,
+    title: "Design Analysis",
     description:
       "Comprehensive engineering analysis including FEA, stress analysis, and thermal simulation. We validate designs to ensure they meet performance requirements and safety standards.",
     features: [
       "Finite Element Analysis (FEA)",
-      "Stress and strain analysis",
+      "Stress & strain analysis",
       "Thermal simulation",
       "Motion analysis",
     ],
   },
   {
-    icon: Settings,
+    icon: RotateCcw,
+    title: "Reverse Engineering",
+    description:
+      "Accurate reverse engineering services to recreate existing parts or legacy components. We use 3D scanning and precision measurement to generate CAD models from physical samples.",
+    features: [
+      "3D scanning & digitization",
+      "Legacy part recreation",
+      "As-built documentation",
+      "Design improvement",
+    ],
+  },
+  {
+    icon: Hammer,
     title: "Prototyping Support",
     description:
       "We guide your designs through the prototyping phase, providing support for 3D printing, CNC machining, and other rapid prototyping methods to bring concepts to physical reality.",
@@ -58,30 +160,6 @@ const services = [
       "CNC machining support",
       "Prototype iteration",
       "Testing documentation",
-    ],
-  },
-  {
-    icon: FileText,
-    title: "Manufacturing Drawings",
-    description:
-      "Production-ready technical drawings with complete GD&T specifications, tolerances, and manufacturing notes. Our drawings ensure seamless communication with manufacturing partners.",
-    features: [
-      "GD&T specifications",
-      "Tolerance analysis",
-      "Bill of materials (BOM)",
-      "Assembly instructions",
-    ],
-  },
-  {
-    icon: Wrench,
-    title: "Design Consultation",
-    description:
-      "Expert mechanical engineering consultation to evaluate existing designs, identify improvements, and provide strategic recommendations for your engineering challenges.",
-    features: [
-      "Design reviews",
-      "Engineering audits",
-      "Feasibility studies",
-      "Cost optimization",
     ],
   },
 ];
