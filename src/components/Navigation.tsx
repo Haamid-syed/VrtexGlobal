@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -38,9 +39,9 @@ const Navigation = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="text-xl font-bold tracking-wider text-foreground hover:opacity-70 transition-opacity duration-300"
+            className="flex items-center hover:opacity-70 transition-opacity duration-300"
           >
-            VRTEXGLOBAL
+            <img src={logo} alt="VRTEXGLOBAL Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
