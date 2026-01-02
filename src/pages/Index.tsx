@@ -89,15 +89,13 @@ const Index = () => {
               alt={`Slide ${index + 1}`}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-background/50" />
           </div>
         ))}
 
-        {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center">
-          <div className="max-w-4xl mx-auto">
-            {/* Dark transparent box behind text */}
-            <div className="bg-foreground/80 backdrop-blur-sm px-8 py-10 md:px-12 md:py-14">
+        {/* Full-screen dark overlay with content */}
+        <div className="absolute inset-0 z-10 bg-foreground/70 flex items-center justify-center">
+          <div className="container mx-auto px-6 lg:px-12 text-center">
+            <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-background">
                 VRTEXGLOBAL
               </h1>
