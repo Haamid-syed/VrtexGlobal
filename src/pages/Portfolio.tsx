@@ -79,8 +79,9 @@ const Portfolio = () => {
               Portfolio
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              A selection of projects showcasing our expertise in mechanical design,
-              engineering analysis, and precision manufacturing support.
+              <strong>VrtexGlobal</strong> is an Automotive, Industrial Product design and development 
+Service providing firm which provides designing services from concept 
+to Prototyping support. 
             </p>
           </AnimatedSection>
         </div>

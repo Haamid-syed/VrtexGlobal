@@ -60,7 +60,7 @@ const Index = () => {
     },
     {
       icon: Cpu,
-      title: "Plastic Product Desing",
+      title: "Plastic Product Design",
       description: "Precision 3D modeling and technical drafting services",
     },
     {
