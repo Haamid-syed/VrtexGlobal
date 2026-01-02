@@ -60,12 +60,12 @@ const Index = () => {
     },
     {
       icon: Layers,
-      title: "Engineering Design",
+      title: "Automotive Design",
       description: "Specialized vehicle component and systems engineering",
     },
     {
       icon: Cpu,
-      title: "Plastic Product Design",
+      title: "Engineering Design",
       description: "Precision 3D modeling and technical drafting services",
     },
     {
