@@ -10,22 +10,22 @@ const Index = () => {
   const services = [
     {
       icon: PenTool,
-      title: "CAD Modeling",
+      title: "Product Design",
       description: "Precision 3D modeling and technical drafting",
     },
     {
       icon: Layers,
-      title: "Product Design",
+      title: "Automotive Design",
       description: "From concept to manufacturable products",
     },
     {
       icon: Cpu,
-      title: "Mechanical Analysis",
+      title: "CAD Modeling",
       description: "FEA and stress analysis solutions",
     },
     {
       icon: Settings,
-      title: "Prototyping",
+      title: "Design Analysis",
       description: "Rapid prototyping and testing support",
     },
   ];
@@ -39,7 +39,7 @@ const Index = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={heroImage}
+            src="/src/assets/bgimg3.jpeg"
             alt="Mechanical engineering CAD visualization"
             className="w-full h-full object-cover opacity-40"
           />
@@ -51,7 +51,8 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground opacity-0-initial animate-fade-in-up">
               VRTEXGLOBAL
-            </h1>
+            </h1> 
+            {/* cornflowerblue */}
             <p className="mt-4 text-lg md:text-xl text-muted-foreground tracking-wide opacity-0-initial animate-fade-in-up delay-200">
               Precision Mechanical Design Solutions
             </p>
