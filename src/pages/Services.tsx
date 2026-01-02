@@ -201,7 +201,7 @@ const Services = () => {
                 delay={index * 100}
               >
                 <div
-                  className="group relative bg-background border border-border p-8 h-full transition-all duration-500 overflow-hidden cursor-pointer"
+                  className="group relative bg-background border border-border p-6 min-h-[280px] transition-all duration-500 overflow-hidden cursor-pointer"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
@@ -225,16 +225,16 @@ const Services = () => {
 
                   {/* Hover State */}
                   <div
-                    className={`absolute inset-0 p-8 bg-foreground transition-all duration-300 flex flex-col justify-center ${
+                    className={`absolute inset-0 p-6 bg-foreground transition-all duration-300 flex flex-col justify-start overflow-y-auto ${
                       hoveredIndex === index
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-4 pointer-events-none"
                     }`}
                   >
-                    <h3 className="text-lg font-bold text-background mb-3">
+                    <h3 className="text-base font-bold text-background mb-2">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+                    <p className="text-xs text-gray-300 mb-3 leading-relaxed">
                       {service.description}
                     </p>
                     <ul className="space-y-1">
@@ -243,7 +243,7 @@ const Services = () => {
                           key={feature}
                           className="text-xs text-gray-400 flex items-center"
                         >
-                          <span className="w-1 h-1 bg-gray-400 rounded-full mr-2" />
+                          <span className="w-1 h-1 bg-gray-400 rounded-full mr-2 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
