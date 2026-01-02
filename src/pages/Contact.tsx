@@ -20,6 +20,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     service: "",
     message: "",
   });
@@ -49,7 +50,7 @@ const Contact = () => {
     // Reset after animation
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: "", email: "", service: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
     }, 3000);
   };
 
@@ -136,6 +137,24 @@ const Contact = () => {
                         required
                         className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
                         placeholder="your@email.com"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="phone"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
+                        placeholder="+1 (555) 123-4567"
                       />
                     </div>
 

@@ -1,12 +1,52 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
-import heroImage from "@/assets/hero-engineering-new.jpg";
+import bgImg1 from "@/assets/bgImg.jpeg";
+import bgImg2 from "@/assets/b2img2.jpeg";
+import bgImg3 from "@/assets/bgimg3.jpeg";
+import bgImg4 from "@/assets/hero-engineering-new.jpg";
 import { ArrowRight, Cpu, Cog, PenTool, Layers, Settings } from "lucide-react";
 
+const slides = [
+  {
+    image: bgImg1,
+    tagline: "Precision Mechanical Design Solutions",
+    description:
+      "We deliver engineering excellence through innovative mechanical design, turning complex challenges into elegant, manufacturable solutions.",
+  },
+  {
+    image: bgImg2,
+    tagline: "CAD Modeling & Technical Drafting",
+    description:
+      "From initial concepts to production-ready designs, our CAD expertise ensures accuracy and efficiency at every stage.",
+  },
+  {
+    image: bgImg3,
+    tagline: "Product Design & Development",
+    description:
+      "Transforming ideas into manufacturable products with a focus on innovation, quality, and market readiness.",
+  },
+  {
+    image: bgImg4,
+    tagline: "Engineering Analysis & Optimization",
+    description:
+      "Advanced FEA and stress analysis to ensure your designs perform flawlessly under real-world conditions.",
+  },
+];
+
 const Index = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   const services = [
     {
       icon: PenTool,
@@ -33,51 +73,79 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/src/assets/bgimg3.jpeg"
-            alt="Mechanical engineering CAD visualization"
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
-        </div>
+        {/* Background Images Carousel */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 z-0 transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <img
+              src={slide.image}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-background/50" />
+          </div>
+        ))}
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground opacity-0-initial animate-fade-in-up">
-              VRTEXGLOBAL
-            </h1> 
-            {/* cornflowerblue */}
-            <p className="mt-4 text-lg md:text-xl text-muted-foreground tracking-wide opacity-0-initial animate-fade-in-up delay-200">
-              Precision Mechanical Design Solutions
-            </p>
-            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed opacity-0-initial animate-fade-in-up delay-300">
-              We deliver engineering excellence through innovative mechanical design,
-              turning complex challenges into elegant, manufacturable solutions.
-              Quality, precision, and innovation define every project we undertake.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0-initial animate-fade-in-up delay-400">
-              <Button variant="hero" size="lg" asChild>
-                <Link to="/services">
-                  Explore Services
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button variant="hero-outline" size="lg" asChild>
-                <Link to="/contact">Contact VRTEXGLOBAL</Link>
-              </Button>
+            {/* Dark transparent box behind text */}
+            <div className="bg-foreground/80 backdrop-blur-sm px-8 py-10 md:px-12 md:py-14">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-background">
+                VRTEXGLOBAL
+              </h1>
+              <p className="mt-4 text-lg md:text-xl text-background/90 tracking-wide">
+                {slides[currentSlide].tagline}
+              </p>
+              <p className="mt-6 text-base md:text-lg text-background/80 max-w-2xl mx-auto leading-relaxed">
+                {slides[currentSlide].description}
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-background text-background hover:bg-background hover:text-foreground"
+                  asChild
+                >
+                  <Link to="/services">
+                    Explore Services
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-background text-background hover:bg-background hover:text-foreground"
+                  asChild
+                >
+                  <Link to="/contact">Contact VRTEXGLOBAL</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0-initial animate-fade-in delay-700">
-          <div className="w-px h-16 bg-gradient-to-b from-muted-foreground to-transparent" />
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentSlide
+                  ? "bg-background w-6"
+                  : "bg-background/50 hover:bg-background/70"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </section>
 

@@ -8,9 +8,19 @@ const About = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-background">
-        <div className="container mx-auto px-6 lg:px-12">
+      {/* Hero Section with Background Image */}
+      <section className="relative pt-32 pb-20 bg-background overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/src/assets/bgImg.jpeg"
+            alt="Engineering background"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
             <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
               About Us
