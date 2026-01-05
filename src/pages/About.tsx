@@ -29,7 +29,7 @@ const About = () => {
               Precision Engineering,<br />Trusted Results
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              VRTEXGLOBAL is a mechanical design services company dedicated to delivering
+              VRTEXGLOBAL is a mechanical product design services company dedicated to delivering
               precision-engineered solutions for forward-thinking organizations worldwide.
             </p>
           </AnimatedSection>

@@ -4,36 +4,40 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
-import bgImg1 from "@/assets/bgImg.jpeg";
-import bgImg2 from "@/assets/b2img2.jpeg";
+import enclosure from "@/assets/image copy.png";
+import taximeter from "@/assets/taximeter.png";
 import bgImg3 from "@/assets/bgimg3.jpeg";
 import bgImg4 from "@/assets/hero-engineering-new.jpg";
+import vt from "@/assets/vehicle-tracking.png";
+import pd from "@/assets/product design.jpeg";
+import ed from "@/assets/engdes.jpeg";
+
 import { ArrowRight, Cpu, Cog, PenTool, Layers, Settings } from "lucide-react";
 
 const slides = [
   {
-    image: bgImg1,
-    tagline: "Precision Mechanical Design Solutions",
+    image: vt,
+    tagline: "Automotive Product Design",
     description:
-      "We deliver engineering excellence through innovative mechanical design, turning complex challenges into elegant, manufacturable solutions.",
+      "We deliver engineering excellence through innovative automotive design, turning complex challenges into elegant, manufacturable solutions.",
   },
   {
-    image: bgImg2,
-    tagline: "CAD Modeling & Technical Drafting",
+    image: taximeter,
+    tagline: "Enclosure Design",
     description:
-      "From initial concepts to production-ready designs, our CAD expertise ensures accuracy and efficiency at every stage.",
+      "We design and develop custom enclosures for worldwide clients, industries like Consumer Electronics, Appliance products, Medical Equipments, LED lighting products, Automotive products, etc.",
   },
   {
-    image: bgImg3,
+    image: pd,
     tagline: "Product Design & Development",
     description:
       "Transforming ideas into manufacturable products with a focus on innovation, quality, and market readiness.",
   },
   {
-    image: bgImg4,
-    tagline: "Engineering Analysis & Optimization",
+    image: ed,
+    tagline: "Engineering Design",
     description:
-      "Advanced FEA and stress analysis to ensure your designs perform flawlessly under real-world conditions.",
+      "Complex Engineering design considerations including tooling feasibilty. ",
   },
 ];
 
@@ -53,25 +57,26 @@ const Index = () => {
       title: "Product Design",
       description: "End-to-end product design from concept to market-ready solutions",
     },
-    {
-      icon: Layers,
-      title: "Industrial Product Design",
-      description: "Specialized vehicle component and systems engineering",
-    },
+    
     {
       icon: Layers,
       title: "Automotive Design",
-      description: "Specialized vehicle component and systems engineering",
+      description: "Specialized automotive components like instrument cluster, vehicle tracking system, automotive display design solutions",
     },
     {
       icon: Cpu,
       title: "Engineering Design",
-      description: "Precision 3D modeling and technical drafting services",
+      description: "Complex product engineering design and development ready to market.",
     },
     {
       icon: Settings,
       title: "Enclosure Design",
-      description: "FEA, stress analysis and performance validation",
+      description: "Enclosure design with aesthetic, ergonomic and eviromental friendly.",
+    },
+    {
+      icon: Settings,
+      title: "Prototype Services",
+      description: "Prototype development for breakthrough ideas.",
     },
   ];
 
@@ -208,7 +213,7 @@ const Index = () => {
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
                 At VRTEXGLOBAL, we combine deep technical expertise with innovative
-                problem-solving to deliver mechanical design solutions that exceed
+                problem-solving to deliver product design solutions that exceed
                 expectations. Our commitment to precision and quality ensures every
                 project meets the highest industry standards.
               </p>
@@ -272,7 +277,7 @@ const Index = () => {
               Ready to Start Your Project?
             </h2>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-              Let's discuss how VRTEXGLOBAL can bring your mechanical design vision to life
+              Let's discuss how VRTEXGLOBAL can bring your product design ideas to physical product
               with precision and innovation.
             </p>
             <div className="mt-8">

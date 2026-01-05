@@ -24,46 +24,22 @@ const services = [
     description:
       "End-to-end product design services that transform innovative ideas into market-ready solutions. We focus on functionality, aesthetics, and manufacturability to create products that stand out.",
     features: [
-      "Concept development",
-      "Industrial design",
+      "Concept Design",
+      "Detailed Engineering design",
       "User-centric design",
-      "Design for manufacturing (DFM)",
+      "Design for Assembly (DFA)",
     ],
   },
   {
     icon: Cog,
     title: "Automotive Design",
     description:
-      "Specialized automotive engineering solutions for vehicle components, systems, and assemblies. We deliver designs that meet strict industry standards for performance, safety, and durability.",
+      "We deliver engineering excellence through innovative automotive design, turning complex challenges into elegant, manufacturable solutions.",
     features: [
-      "Vehicle component design",
+      "Instrument Cluster Design",
+      "Standalone Displays",
       "Powertrain systems",
       "Interior & exterior parts",
-      "Compliance documentation",
-    ],
-  },
-  {
-    icon: Layers,
-    title: "Industrial Product Design",
-    description:
-      "Robust industrial product design for machinery, equipment, and heavy-duty applications. Our designs prioritize durability, efficiency, and ease of maintenance for demanding environments.",
-    features: [
-      "Heavy equipment design",
-      "Machinery components",
-      "Tooling design",
-      "Ergonomic solutions",
-    ],
-  },
-  {
-    icon: Zap,
-    title: "Electromechanical Product Design",
-    description:
-      "Integrated electromechanical design combining mechanical systems with electronic components. We create seamless solutions for devices requiring precision motion and control.",
-    features: [
-      "Actuator integration",
-      "Motor mounting design",
-      "Sensor housings",
-      "Thermal management",
     ],
   },
   {
@@ -78,6 +54,46 @@ const services = [
       "Performance optimization",
     ],
   },
+
+  {
+    icon: Hammer,
+    title: "Enclosure Design",
+    description:
+      "The product enclosure serve to protect sensitive electronic components from environmental factors, physical damage and electromagnetic interference. ",
+    features: [
+      "Aesthetic and Ergonomics",
+      "Environmental protection (IP Rating)",
+      "Thermal management",
+      "EMI/RFI shielding",
+      "Size and form factor.",
+      "Safety features and regulatory compliance."
+    ],
+  },
+  {
+    icon: Hammer,
+    title: "Prototyping",
+    description:
+      "We guide your designs through the prototyping phase, providing support for 3D printing, CNC machining, and other rapid prototyping methods to bring concepts to physical reality.",
+    features: [
+      "3D printing preparation",
+      "CNC machining support",
+      "Prototype iteration",
+      "Testing documentation",
+    ],
+  },
+  {
+    icon: Zap,
+    title: "Electromechanical Product Design",
+    description:
+      "Integrated electromechanical design combining mechanical systems with electronic components. We create seamless solutions for devices requiring precision motion and control.",
+    features: [
+      "Actuator integration",
+      "Motor mounting design",
+      "Sensor housings",
+      "Thermal management",
+    ],
+  },
+  
   {
     icon: Cpu,
     title: "CAD Modeling",
@@ -127,6 +143,18 @@ const services = [
     ],
   },
   {
+    icon: Layers,
+    title: "Industrial Product Design",
+    description:
+      "Robust industrial product design for machinery, equipment, and heavy-duty applications. Our designs prioritize durability, efficiency, and ease of maintenance for demanding environments.",
+    features: [
+      "Heavy equipment design",
+      "Machinery components",
+      "Tooling design",
+      "Ergonomic solutions",
+    ],
+  },
+  {
     icon: Wrench,
     title: "Design Analysis",
     description:
@@ -150,18 +178,8 @@ const services = [
       "Design improvement",
     ],
   },
-  {
-    icon: Hammer,
-    title: "Prototyping Support",
-    description:
-      "We guide your designs through the prototyping phase, providing support for 3D printing, CNC machining, and other rapid prototyping methods to bring concepts to physical reality.",
-    features: [
-      "3D printing preparation",
-      "CNC machining support",
-      "Prototype iteration",
-      "Testing documentation",
-    ],
-  },
+  
+  
 ];
 
 const Services = () => {
@@ -179,7 +197,7 @@ const Services = () => {
               Our Services
             </span>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-              Mechanical Design<br />Services
+              Product Design<br />Services
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               Comprehensive engineering solutions from concept to production.

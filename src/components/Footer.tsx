@@ -9,8 +9,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold tracking-wider mb-4">VRTEXGLOBAL</h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md">
-              Precision mechanical design solutions for forward-thinking companies.
-              Engineering excellence meets innovative problem-solving.
+              Product design and development services for innovative thinkers and manufacturers.
             </p>
           </div>
 
@@ -41,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li>info@vrtexglobal.com</li>
               <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li>Undri, Pune</li>
             </ul>
           </div>
         </div>
