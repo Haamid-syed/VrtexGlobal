@@ -211,7 +211,7 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <AnimatedSection
                 key={service.title}
