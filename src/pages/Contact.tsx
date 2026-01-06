@@ -131,13 +131,13 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Contact Form & Quote Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
             <AnimatedSection animation="fade-in-up">
-              <div className="bg-background border border-border p-8 md:p-12">
+              <div className="bg-background border border-border p-8 md:p-10 h-full">
                 <h2 className="text-2xl font-bold text-foreground mb-6">
                   Send a Message
                 </h2>
@@ -153,7 +153,7 @@ const Contact = () => {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
                       <label
                         htmlFor="name"
@@ -246,7 +246,7 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        rows={6}
+                        rows={4}
                         className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300 resize-none"
                         placeholder="Tell us about your project..."
                       />
@@ -273,24 +273,13 @@ const Contact = () => {
               </div>
             </AnimatedSection>
 
-          </div>
-        </div>
-      </section>
+            {/* Request Quote Form */}
+            <AnimatedSection animation="fade-in-up" delay={200}>
+              <div className="bg-background border border-border p-8 md:p-10 h-full">
+                <h2 className="text-2xl font-bold text-foreground mb-6">
+                  Request a Quote
+                </h2>
 
-      {/* Request Quote Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6 lg:px-12">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-              Request a Quote
-            </h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Get a personalized quote for your project. Fill in your details and we'll get back to you with a tailored proposal.
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection animation="fade-in-up" delay={200}>
-            <div className="max-w-3xl mx-auto bg-secondary border border-border p-8 md:p-12">
               {isQuoteSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12 animate-scale-in">
                   <CheckCircle className="w-16 h-16 text-foreground mb-4" />
@@ -302,7 +291,7 @@ const Contact = () => {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleQuoteSubmit} className="space-y-6">
+                <form onSubmit={handleQuoteSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label
@@ -439,8 +428,9 @@ const Contact = () => {
                   </Button>
                 </form>
               )}
-            </div>
-          </AnimatedSection>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
