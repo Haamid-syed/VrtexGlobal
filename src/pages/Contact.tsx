@@ -134,9 +134,9 @@ const Contact = () => {
       {/* Contact Form & Info */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="max-w-2xl mx-auto">
             {/* Contact Form */}
-            <AnimatedSection animation="slide-in-left">
+            <AnimatedSection animation="fade-in-up">
               <div className="bg-background border border-border p-8 md:p-12">
                 <h2 className="text-2xl font-bold text-foreground mb-6">
                   Send a Message
