@@ -103,7 +103,7 @@ to Prototyping support.
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   {/* Image */}
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-[3/2] overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
