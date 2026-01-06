@@ -80,10 +80,7 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-
-      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {/* Background Images Carousel */}
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -99,7 +96,6 @@ const Index = () => {
           </div>
         ))}
 
-        {/* Full-screen dark overlay with content */}
         <div className="absolute inset-0 z-10 bg-foreground/70 flex items-center justify-center">
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <div className="max-w-4xl mx-auto">
@@ -137,7 +133,6 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Slide Indicators */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex gap-2">
           {slides.map((_, index) => (
             <button
@@ -154,7 +149,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Preview */}
       <section className="py-24 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="text-center mb-16">

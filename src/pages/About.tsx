@@ -8,9 +8,7 @@ const About = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section with Background Image */}
       <section className="relative pt-32 pb-20 bg-background overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="/src/assets/bgImg.jpeg"
@@ -113,7 +111,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="text-center mb-16">

@@ -67,14 +67,12 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     setIsSubmitting(false);
     setIsSubmitted(true);
     toast.success("Message sent successfully!");
 
-    // Reset after animation
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({ name: "", email: "", phone: "", service: "", message: "" });
@@ -113,7 +111,6 @@ const Contact = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
       <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
