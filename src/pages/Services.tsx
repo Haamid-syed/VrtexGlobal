@@ -211,7 +211,7 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {services.map((service, index) => (
               <AnimatedSection
                 key={service.title}
@@ -219,7 +219,7 @@ const Services = () => {
                 delay={index * 100}
               >
                 <div
-                  className="group relative bg-background border border-border p-6 min-h-[280px] transition-all duration-500 overflow-hidden cursor-pointer"
+                  className="group relative bg-background border border-border p-8 min-h-[320px] transition-all duration-500 overflow-hidden cursor-pointer"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
