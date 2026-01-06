@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Mail, MapPin, Phone, Send, CheckCircle, MessageCircle, FileText } from "lucide-react";
+import { Send, CheckCircle, FileText } from "lucide-react";
 
 const serviceOptions = [
   { value: "", label: "Select a service" },
