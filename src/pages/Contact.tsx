@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Mail, MapPin, Phone, Send, CheckCircle, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Send, CheckCircle, MessageCircle, FileText } from "lucide-react";
 
 const serviceOptions = [
   { value: "", label: "Select a service" },
@@ -14,6 +14,22 @@ const serviceOptions = [
   { value: "prototyping", label: "Prototyping Support" },
   { value: "manufacturing", label: "Manufacturing Drawings" },
   { value: "other", label: "Other" },
+];
+
+const quoteServiceOptions = [
+  { value: "", label: "Select a service" },
+  { value: "product-design", label: "Product Design" },
+  { value: "automotive-design", label: "Automotive Design" },
+  { value: "industrial-design", label: "Industrial Product Design" },
+  { value: "electromechanical", label: "Electromechanical Product Design" },
+  { value: "mechanical-engineering", label: "Mechanical Engineering Design" },
+  { value: "cad-modeling", label: "CAD Modeling" },
+  { value: "plastic-design", label: "Plastic Design" },
+  { value: "sheet-metal", label: "Sheet Metal Design" },
+  { value: "product-development", label: "Product Development" },
+  { value: "design-analysis", label: "Design Analysis" },
+  { value: "reverse-engineering", label: "Reverse Engineering" },
+  { value: "prototyping", label: "Prototyping Support" },
 ];
 
 const Contact = () => {
@@ -26,6 +42,17 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const [quoteData, setQuoteData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "",
+    projectDetails: "",
+  });
+  const [isQuoteSubmitting, setIsQuoteSubmitting] = useState(false);
+  const [isQuoteSubmitted, setIsQuoteSubmitted] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -54,7 +81,32 @@ const Contact = () => {
     }, 3000);
   };
 
-  const whatsappNumber = "15551234567"; // Replace with actual WhatsApp number
+  const handleQuoteChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setQuoteData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleQuoteSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsQuoteSubmitting(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    setIsQuoteSubmitting(false);
+    setIsQuoteSubmitted(true);
+    toast.success("Quote request submitted successfully!");
+
+    setTimeout(() => {
+      setIsQuoteSubmitted(false);
+      setQuoteData({ name: "", email: "", phone: "", company: "", service: "", projectDetails: "" });
+    }, 3000);
+  };
+
+  const whatsappNumber = "15551234567";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -313,6 +365,173 @@ const Contact = () => {
               </div>
             </AnimatedSection>
           </div>
+        </div>
+      </section>
+
+      {/* Request Quote Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6 lg:px-12">
+          <AnimatedSection className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+              Request a Quote
+            </h2>
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+              Get a personalized quote for your project. Fill in your details and we'll get back to you with a tailored proposal.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection animation="fade-in-up" delay={200}>
+            <div className="max-w-3xl mx-auto bg-secondary border border-border p-8 md:p-12">
+              {isQuoteSubmitted ? (
+                <div className="flex flex-col items-center justify-center py-12 animate-scale-in">
+                  <CheckCircle className="w-16 h-16 text-foreground mb-4" />
+                  <h3 className="text-xl font-bold text-foreground mb-2">
+                    Quote Request Submitted!
+                  </h3>
+                  <p className="text-muted-foreground text-center">
+                    Thank you! We'll review your request and send you a quote soon.
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleQuoteSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        htmlFor="quote-name"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Full Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-name"
+                        name="name"
+                        value={quoteData.name}
+                        onChange={handleQuoteChange}
+                        required
+                        className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
+                        placeholder="Your full name"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="quote-email"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Email *
+                      </label>
+                      <input
+                        type="email"
+                        id="quote-email"
+                        name="email"
+                        value={quoteData.email}
+                        onChange={handleQuoteChange}
+                        required
+                        className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="quote-phone"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="quote-phone"
+                        name="phone"
+                        value={quoteData.phone}
+                        onChange={handleQuoteChange}
+                        className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
+                        placeholder="+1 (555) 123-4567"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="quote-company"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-company"
+                        name="company"
+                        value={quoteData.company}
+                        onChange={handleQuoteChange}
+                        className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
+                        placeholder="Your company name"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="quote-service"
+                      className="block text-sm font-medium text-foreground mb-2"
+                    >
+                      Service Required *
+                    </label>
+                    <select
+                      id="quote-service"
+                      name="service"
+                      value={quoteData.service}
+                      onChange={handleQuoteChange}
+                      required
+                      className="w-full px-4 py-3 bg-background border border-border text-foreground focus:outline-none focus:border-foreground transition-colors duration-300 appearance-none cursor-pointer"
+                    >
+                      {quoteServiceOptions.map((option) => (
+                        <option key={option.value} value={option.value} disabled={option.value === ""}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="quote-details"
+                      className="block text-sm font-medium text-foreground mb-2"
+                    >
+                      Project Details *
+                    </label>
+                    <textarea
+                      id="quote-details"
+                      name="projectDetails"
+                      value={quoteData.projectDetails}
+                      onChange={handleQuoteChange}
+                      required
+                      rows={6}
+                      className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300 resize-none"
+                      placeholder="Describe your project requirements, timeline, quantity, and any specific details..."
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    variant="hero"
+                    size="lg"
+                    className="w-full"
+                    disabled={isQuoteSubmitting}
+                  >
+                    {isQuoteSubmitting ? (
+                      "Submitting..."
+                    ) : (
+                      <>
+                        Request Quote
+                        <FileText className="ml-2 h-4 w-4" />
+                      </>
+                    )}
+                  </Button>
+                </form>
+              )}
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

@@ -4,11 +4,11 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-16">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div>
             <h3 className="text-2xl font-bold tracking-wider mb-4">VRTEXGLOBAL</h3>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+            <p className="text-gray-400 text-sm leading-relaxed">
               Product design and development services for innovative thinkers and manufacturers.
             </p>
           </div>
@@ -26,6 +26,25 @@ const Footer = () => {
                     className="text-gray-400 text-sm hover:text-background transition-colors duration-300"
                   >
                     {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* What We Do */}
+          <div>
+            <h4 className="text-sm font-semibold tracking-wider uppercase mb-4">
+              What We Do
+            </h4>
+            <ul className="space-y-3">
+              {["Product Design", "Automotive Design", "CAD Modeling", "Prototyping", "Design Analysis", "Reverse Engineering"].map((service) => (
+                <li key={service}>
+                  <Link
+                    to="/services"
+                    className="text-gray-400 text-sm hover:text-background transition-colors duration-300"
+                  >
+                    {service}
                   </Link>
                 </li>
               ))}
