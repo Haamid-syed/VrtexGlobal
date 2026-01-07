@@ -8,7 +8,7 @@ const navLinks = [
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Gallery", path: "/gallery" },
+  // { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -41,7 +41,7 @@ const Navigation = () => {
             to="/"
             className="flex items-center gap-3 hover:opacity-70 transition-opacity duration-300"
           >
-            <img src={logo} alt="VRTEXGLOBAL Logo" className="h-10 w-auto" />
+            <img src={logo} alt="VRTEXGLOBAL Logo" className="h-14 w-auto" />
             <span className="text-lg font-bold tracking-wider text-foreground">VRTEXGLOBAL</span>
           </Link>
 

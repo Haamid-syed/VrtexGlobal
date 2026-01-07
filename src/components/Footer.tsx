@@ -38,7 +38,7 @@ const Footer = () => {
               What We Do
             </h4>
             <ul className="space-y-3">
-              {["Product Design", "Automotive Design", "CAD Modeling", "Prototyping", "Design Analysis", "Reverse Engineering"].map((service) => (
+              {["Product Design", "Automotive Design", "Engineering Design", "Enclosure Design", "Prototyping", "Reverse Engineering"].map((service) => (
                 <li key={service}>
                   <Link
                     to="/services"
@@ -58,7 +58,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li>info@vrtexglobal.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>9975613695</li>
               <li>Undri, Pune</li>
             </ul>
           </div>

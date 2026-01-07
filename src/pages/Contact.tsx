@@ -104,7 +104,7 @@ const Contact = () => {
     }, 3000);
   };
 
-  const whatsappNumber = "15551234567";
+  const whatsappNumber = "9975613695";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -203,7 +203,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="9975613695"
                       />
                     </div>
 
@@ -342,7 +342,7 @@ const Contact = () => {
                         value={quoteData.phone}
                         onChange={handleQuoteChange}
                         className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="9975613695"
                       />
                     </div>
 

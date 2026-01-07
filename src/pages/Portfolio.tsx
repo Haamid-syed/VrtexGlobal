@@ -9,55 +9,102 @@ import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
+import vts from "@/assets/vts.png";
+import edp from "@/assets/eng_des_port.jpeg";
+import encd_port from "@/assets/enc_d_port.png";
+import prot_d from "@/assets/prot_d.jpeg";
+import image_6 from "@/assets/image6.jpeg";
+import image_1 from "@/assets/image1.jpeg";
+import image_7 from "@/assets/image7.jpeg";
 
 const projects = [
   {
     id: 1,
-    title: "Precision Gear Assembly",
-    category: "Industrial Machinery",
+    title: "Product design for Smoke Detector",
+    // category: "Industrial Machinery",
     description:
-      "Complete gear train design for high-torque industrial applications. Includes stress analysis and manufacturing specifications.",
-    image: portfolio1,
+      "Product design of a smoke detector primarily involves a disk-shaped plastic enclosure engineered to securely house internal electronic components, facilitate air/smoke entry into a sensing chamber, and meet safety standards.",
+    image: image_1,
   },
   {
     id: 2,
-    title: "Hydraulic Pump System",
-    category: "Fluid Systems",
+    title: "Automotive product design for Vehicle tracking system",
+    // category: "Fluid Systems",
     description:
-      "Custom hydraulic pump assembly designed for aerospace applications with extreme performance requirements.",
-    image: portfolio2,
+      "Aesthetical improved Compact Design of VTS. Engineering Design & Detailing of VTS. Engineering design with IP 65 Protection.",
+    image: vts,
   },
   {
     id: 3,
-    title: "Robotic Arm Mechanism",
-    category: "Automation",
+    title: "Engineering design for MFECU",
+    // category: "Automation",
     description:
-      "Six-axis robotic arm design with precision actuation and advanced motion control integration.",
-    image: portfolio3,
+      "Compact Engineering Design for MFECU. Plastic Enclosure Housing & Top cover – Plastic ABS material for MFECU",
+    image: edp,
   },
   {
     id: 4,
-    title: "CNC Machine Components",
-    category: "Manufacturing",
+    title: "Enclosure Design for Taximeter",
+    // category: "Manufacturing",
     description:
-      "High-precision machined components for advanced CNC systems requiring micron-level tolerances.",
-    image: portfolio4,
+      "Aesthetically improved Compact Design of Plastic Enclosure Housing – Plastic ABS +PC with IP65 protection for Taximeter.Engineering Design for Printer Mounting. Engineering Design of Cover in PC for Paper Roll. LED Illuminated indication on the back side of Meter for ‘FOR HIRE’.",
+    image: encd_port,
   },
   {
     id: 5,
-    title: "Technical Documentation",
-    category: "Engineering Drawings",
+    title: "Prototype development for Jumbo meter flag compact",
+    // category: "Engineering Drawings",
     description:
-      "Comprehensive manufacturing drawing packages with complete GD&T specifications and assembly instructions.",
-    image: portfolio5,
+      "3D printed prototype development for breakthrough ideas",
+    image: prot_d,
   },
   {
     id: 6,
-    title: "Turbine Component Design",
+    title: "Electromechanical Product Design for Tabmeter",
     category: "Aerospace",
     description:
-      "High-performance turbine components engineered for extreme temperatures and rotational speeds.",
-    image: portfolio6,
+      "Aesthetically improved Compact Design of Plastic Enclosure. Housing – Plastic ABS +PC with IP65 protection for Tabmeter. Engineering Design for display Mounting. Engineering Design for Meter Mounting on Taxi/Rickshaw.",
+    image: image_6,
+  },
+  {
+    id: 7,
+    title: "3D CAD Modelling",
+    // category: "Aerospace",
+    description:
+      "CAD Modeling and Mechanical design for Soldering fixture",
+    image: image_7,
+  },
+  {
+    id: 8,
+    title: "3D CAD Modelling",
+    // category: "Aerospace",
+    description:
+      "CAD Modeling and Mechanical design for Soldering fixture",
+    image: image_7,
+  },
+  {
+    id: 7,
+    title: "3D CAD Modelling",
+    // category: "Aerospace",
+    description:
+      "CAD Modeling and Mechanical design for Soldering fixture",
+    image: image_7,
+  },
+  {
+    id: 7,
+    title: "3D CAD Modelling",
+    // category: "Aerospace",
+    description:
+      "CAD Modeling and Mechanical design for Soldering fixture",
+    image: image_7,
+  },
+  {
+    id: 7,
+    title: "3D CAD Modelling",
+    // category: "Aerospace",
+    description:
+      "CAD Modeling and Mechanical design for Soldering fixture",
+    image: image_7,
   },
 ];
 

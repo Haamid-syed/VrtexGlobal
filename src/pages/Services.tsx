@@ -85,12 +85,13 @@ const services = [
     icon: Zap,
     title: "Electromechanical Product Design",
     description:
-      "Integrated electromechanical design combining mechanical systems with electronic components. We create seamless solutions for devices requiring precision motion and control.",
+      "Electromechanical Product Design integrates mechanical, electronics and electrical engineering to create products like automotive or appliances, focusing on seamless collaboration, thermal management, and EMI mitigation for efficient, functional, and reliable devices",
     features: [
-      "Actuator integration",
-      "Motor mounting design",
-      "Sensor housings",
+      "Integration",
+      "Optimization",
+      "IP Ratings",
       "Thermal management",
+      "EMI/EMC"
     ],
   },
   
@@ -98,7 +99,7 @@ const services = [
     icon: Cpu,
     title: "CAD Modeling",
     description:
-      "Precision 3D CAD modeling and 2D technical drafting using industry-standard software. We create detailed, accurate models that serve as the foundation for manufacturing and analysis.",
+      "Precision 3D CAD modeling and 2D technical drawing using industry-standard software. We create detailed, accurate models that serve as the foundation for manufacturing and analysis.",
     features: [
       "3D solid & surface modeling",
       "2D technical drawings",
@@ -112,10 +113,10 @@ const services = [
     description:
       "Expert plastic part design optimized for injection molding and other manufacturing processes. We focus on material selection, wall thickness, and tooling considerations for cost-effective production.",
     features: [
-      "Injection mold design",
-      "Draft angle optimization",
-      "Wall thickness analysis",
       "Material selection",
+      "Wall thickness",
+      "Draft analysis",
+      "Manufacturing process",
     ],
   },
   {
@@ -144,14 +145,10 @@ const services = [
   },
   {
     icon: Layers,
-    title: "Industrial Product Design",
+    title: "On-Site Services",
     description:
-      "Robust industrial product design for machinery, equipment, and heavy-duty applications. Our designs prioritize durability, efficiency, and ease of maintenance for demanding environments.",
+      "Get multi-disciplinary experts without the cost of full-time employees. Engage specialized skills for specific project durations. Affordable solutions, especially for small, medium and large businesses.",
     features: [
-      "Heavy equipment design",
-      "Machinery components",
-      "Tooling design",
-      "Ergonomic solutions",
     ],
   },
   {
@@ -163,16 +160,18 @@ const services = [
       "Finite Element Analysis (FEA)",
       "Stress & strain analysis",
       "Thermal simulation",
-      "Motion analysis",
+      "Structural analysis",
+      "Environmental Effect",
     ],
   },
   {
     icon: RotateCcw,
     title: "Reverse Engineering",
     description:
-      "Accurate reverse engineering services to recreate existing parts or legacy components. We use 3D scanning and precision measurement to generate CAD models from physical samples.",
+      "Accurate reverse engineering services to recreate existing parts or legacy components. We use 3D scanning, benchmarking and precision measurement to generate CAD models from physical samples.",
     features: [
       "3D scanning & digitization",
+      "Benchmarking",
       "Legacy part recreation",
       "As-built documentation",
       "Design improvement",
@@ -197,7 +196,7 @@ const Services = () => {
               Our Services
             </span>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-              Product Design<br />Services
+              Product Design and Development<br />Services
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               Comprehensive engineering solutions from concept to production.
@@ -286,12 +285,13 @@ const Services = () => {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {[
-              { step: "01", title: "Discovery", desc: "Understanding your requirements and objectives" },
+              { step: "01", title: "Define", desc: "Understanding your requirements and objectives" },
               { step: "02", title: "Design", desc: "Creating innovative solutions with precision" },
-              { step: "03", title: "Validate", desc: "Rigorous analysis and testing verification" },
-              { step: "04", title: "Deliver", desc: "Production-ready documentation and support" },
+              { step: "03", title: "Develop", desc: "Develop for breakthrough ideas" },
+              { step: "04", title: "Verify", desc: "Rigorous analysis and testing verification" },
+              { step: "05", title: "Deliver", desc: "Production-ready data and support" },
             ].map((item, index) => (
               <AnimatedSection key={item.step} animation="fade-in-up" delay={index * 150}>
                 <div className="text-center">
