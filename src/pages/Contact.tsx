@@ -439,26 +439,23 @@ const Contact = () => {
               Our Location
             </h2>
             <a
-              href="https://www.google.com/maps/search/Mantra+Essence,+Undri,+Pune"
+              href="https://www.google.com/maps/search/?api=1&query=Mantra+Essence%2C+Undri%2C+Pune"
               target="_blank"
               rel="noopener noreferrer"
               className="block"
             >
               <div className="w-full h-[400px] rounded-lg overflow-hidden border border-border cursor-pointer hover:opacity-90 transition-opacity">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5!2d73.9!3d18.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMantra%20Essence%2C%20Undri%2C%20Pune!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps?q=Mantra%20Essence%2C%20Undri%2C%20Pune&z=16&output=embed"
                   width="100%"
                   height="100%"
-                  style={{ border: 0 }}
+                  style={{ border: 0, pointerEvents: "none" }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="VRTEXGLOBAL Location - Mantra Essence, Undri, Pune"
                 ></iframe>
               </div>
-              <p className="text-center mt-4 text-muted-foreground">
-                Mantra Essence, Undri, Pune - Click to open in Google Maps
-              </p>
             </a>
           </AnimatedSection>
         </div>
