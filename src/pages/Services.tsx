@@ -216,13 +216,13 @@ const Services = () => {
 
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
-            <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
+            <span className="text-sm font-medium tracking-widest text-black uppercase">
               Our Services
             </span>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
               Product Design and Development<br />Services
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-black leading-relaxed">
               Comprehensive engineering solutions from concept to production.
               Each service is delivered with precision, expertise, and an
               unwavering commitment to quality.
