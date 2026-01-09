@@ -147,7 +147,7 @@ to Prototyping support.
                 animation="fade-in-up"
                 delay={index * 100}
               >
-                <div className="bg-background rounded-lg overflow-hidden">
+                <div className="rounded-lg overflow-hidden">
                   {/* Image */}
                   <div className="aspect-[16/9] overflow-hidden">
                     <img
