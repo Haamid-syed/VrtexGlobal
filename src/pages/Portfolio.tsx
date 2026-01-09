@@ -16,6 +16,10 @@ import prot_d from "@/assets/prot_d.jpeg";
 import image_6 from "@/assets/image6.jpeg";
 import image_1 from "@/assets/image1.jpeg";
 import image_7 from "@/assets/image7.jpeg";
+import ppd from "@/assets/ppd.png";
+import smd from "@/assets/smd.png";
+import red from "@/assets/red.jpeg";
+import npd from "@/assets/npd.jpeg";
 
 const projects = [
   {
@@ -76,36 +80,44 @@ const projects = [
   },
   {
     id: 8,
-    title: "3D CAD Modelling",
+    title: "Plastic product design for JW weighing scale Precision 600g",
     // category: "Aerospace",
     description:
-      "CAD Modeling and Mechanical design for Soldering fixture",
-    image: image_7,
+      "Aesthetically improved Compact Design of Plastic Enclosure. Housing – Plastic ABS with IP54 protection for weighing scale. Engineering Design for electronics and weighing scale Mounting.",
+    image: ppd,
   },
   {
-    id: 7,
-    title: "3D CAD Modelling",
+    id: 9,
+    title: "Sheet metal design for Power supply",
     // category: "Aerospace",
-    description:
-      "CAD Modeling and Mechanical design for Soldering fixture",
-    image: image_7,
+    // description:
+    //   "CAD Modeling and Mechanical design for Soldering fixture",
+    image: smd,
   },
   {
-    id: 7,
-    title: "3D CAD Modelling",
+    id: 10,
+    title: "Reverse engineering for Suction unit (Medical product)",
     // category: "Aerospace",
-    description:
-      "CAD Modeling and Mechanical design for Soldering fixture",
-    image: image_7,
+    // description:
+    //   "CAD Modeling and Mechanical design for Soldering fixture",
+    image: red,
   },
   {
-    id: 7,
-    title: "3D CAD Modelling",
+    id: 11,
+    title: "New Product Development process",
     // category: "Aerospace",
-    description:
-      "CAD Modeling and Mechanical design for Soldering fixture",
-    image: image_7,
+    // description:
+    //   "CAD Modeling and Mechanical design for Soldering fixture",
+    image: npd,
   },
+  // {
+  //   id: 12,
+  //   title: "New Product Development process",
+  //   // category: "Aerospace",
+  //   // description:
+  //   //   "CAD Modeling and Mechanical design for Soldering fixture",
+  //   image: npd,
+  // },
 ];
 
 const Portfolio = () => {
