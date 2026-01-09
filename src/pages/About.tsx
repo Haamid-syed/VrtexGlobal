@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Target, Lightbulb, Award } from "lucide-react";
+import abt from "@/assets/aboutImg.jpeg"
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
       <section className="relative pt-32 pb-20 bg-background overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/bgImg.jpeg"
+            src={abt}
             alt="Engineering background"
             className="w-full h-full object-cover opacity-30"
           />
