@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -21,6 +22,7 @@ const services = [
   {
     icon: PenTool,
     title: "Product Design",
+    slug: "product-design",
     description:
       "End-to-end product design services that transform innovative ideas into market-ready solutions. We focus on functionality, aesthetics, and manufacturability to create products that stand out.",
     features: [
@@ -33,6 +35,7 @@ const services = [
   {
     icon: Cog,
     title: "Automotive Design",
+    slug: "automotive-design",
     description:
       "We deliver engineering excellence through innovative automotive design, turning complex challenges into elegant, manufacturable solutions.",
     features: [
@@ -45,6 +48,7 @@ const services = [
   {
     icon: Settings,
     title: "Mechanical Engineering Design",
+    slug: "mechanical-engineering",
     description:
       "Comprehensive mechanical engineering services covering stress analysis, mechanism design, and system optimization. We ensure your designs perform reliably under real-world conditions.",
     features: [
@@ -54,10 +58,10 @@ const services = [
       "Performance optimization",
     ],
   },
-
   {
     icon: Hammer,
     title: "Enclosure Design",
+    slug: "enclosure-design",
     description:
       "The product enclosure serve to protect sensitive electronic components from environmental factors, physical damage and electromagnetic interference. ",
     features: [
@@ -72,6 +76,7 @@ const services = [
   {
     icon: Hammer,
     title: "Prototyping",
+    slug: "prototyping",
     description:
       "We guide your designs through the prototyping phase, providing support for 3D printing, CNC machining, and other rapid prototyping methods to bring concepts to physical reality.",
     features: [
@@ -84,8 +89,9 @@ const services = [
   {
     icon: Zap,
     title: "Electromechanical Product Design",
+    slug: "electromechanical",
     description:
-      "Electromechanical Product Design integrates mechanical, electronics and electrical engineering to create products like automotive or appliances, focusing on seamless collaboration, thermal management, and EMI mitigation for efficient, functional, and reliable devices",
+      "Electromechanical Product Design integrates mechanical, electronics and electrical engineering to create products like automotive or appliances, focusing on seamless collaboration, thermal management, and EMI mitigation for efficient, functional, and reliable devices",
     features: [
       "Integration",
       "Optimization",
@@ -94,10 +100,10 @@ const services = [
       "EMI/EMC"
     ],
   },
-  
   {
     icon: Cpu,
     title: "CAD Modeling",
+    slug: "cad-modeling",
     description:
       "Precision 3D CAD modeling and 2D technical drawing using industry-standard software. We create detailed, accurate models that serve as the foundation for manufacturing and analysis.",
     features: [
@@ -110,6 +116,7 @@ const services = [
   {
     icon: Box,
     title: "Plastic Product Design",
+    slug: "plastic-design",
     description:
       "Expert plastic part design optimized for injection molding and other manufacturing processes. We focus on material selection, wall thickness, and tooling considerations for cost-effective production.",
     features: [
@@ -122,6 +129,7 @@ const services = [
   {
     icon: FileText,
     title: "Sheet Metal Design",
+    slug: "sheet-metal",
     description:
       "Specialized sheet metal design for enclosures, brackets, and structural components. Our designs consider bend radii, material properties, and manufacturing constraints for optimal fabrication.",
     features: [
@@ -134,6 +142,7 @@ const services = [
   {
     icon: Package,
     title: "Product Development",
+    slug: "product-development",
     description:
       "Full-cycle product development from initial concept through production launch. We guide your project through every phase, ensuring quality deliverables and timely milestones.",
     features: [
@@ -146,14 +155,15 @@ const services = [
   {
     icon: Layers,
     title: "On-Site Services",
+    slug: "onsite-services",
     description:
       "Get multi-disciplinary experts without the cost of full-time employees. Engage specialized skills for specific project durations. Affordable solutions, especially for small, medium and large businesses.",
-    features: [
-    ],
+    features: [],
   },
   {
     icon: Wrench,
     title: "Design Analysis",
+    slug: "design-analysis",
     description:
       "Comprehensive engineering analysis including FEA, stress analysis, and thermal simulation. We validate designs to ensure they meet performance requirements and safety standards.",
     features: [
@@ -167,6 +177,7 @@ const services = [
   {
     icon: RotateCcw,
     title: "Reverse Engineering",
+    slug: "reverse-engineering",
     description:
       "Accurate reverse engineering services to recreate existing parts or legacy components. We use 3D scanning, benchmarking and precision measurement to generate CAD models from physical samples.",
     features: [
@@ -177,12 +188,15 @@ const services = [
       "Design improvement",
     ],
   },
-  
-  
 ];
 
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const navigate = useNavigate();
+
+  const handleServiceClick = (slug: string) => {
+    navigate(`/portfolio#${slug}`);
+  };
 
   return (
     <main className="min-h-screen bg-background">
@@ -221,6 +235,7 @@ const Services = () => {
                   className="group relative bg-background border border-border p-8 min-h-[320px] transition-all duration-500 overflow-hidden cursor-pointer"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
+                  onClick={() => handleServiceClick(service.slug)}
                 >
                   {/* Default State */}
                   <div
