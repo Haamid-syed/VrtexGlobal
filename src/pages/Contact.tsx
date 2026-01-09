@@ -8,12 +8,18 @@ import { Send, CheckCircle, FileText } from "lucide-react";
 
 const serviceOptions = [
   { value: "", label: "Select a service" },
-  { value: "cad", label: "CAD Modeling & Drafting" },
-  { value: "product", label: "Product & Concept Design" },
-  { value: "analysis", label: "Mechanical Analysis" },
+  { value: "product-design", label: "Product Design" },
+  { value: "automotive-design", label: "Automotive Design" },
+  { value: "industrial-design", label: "Industrial Product Design" },
+  { value: "electromechanical", label: "Electromechanical Product Design" },
+  { value: "mechanical-engineering", label: "Mechanical Engineering Design" },
+  { value: "cad-modeling", label: "CAD Modeling" },
+  { value: "plastic-design", label: "Plastic Design" },
+  { value: "sheet-metal", label: "Sheet Metal Design" },
+  { value: "product-development", label: "Product Development" },
+  { value: "design-analysis", label: "Design Analysis" },
+  { value: "reverse-engineering", label: "Reverse Engineering" },
   { value: "prototyping", label: "Prototyping Support" },
-  { value: "manufacturing", label: "Manufacturing Drawings" },
-  { value: "other", label: "Other" },
 ];
 
 const quoteServiceOptions = [
@@ -203,7 +209,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
-                        placeholder="9975613695"
+                        placeholder="Enter Phone No."
                       />
                     </div>
 
@@ -342,7 +348,7 @@ const Contact = () => {
                         value={quoteData.phone}
                         onChange={handleQuoteChange}
                         className="w-full px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground transition-colors duration-300"
-                        placeholder="9975613695"
+                        placeholder="Enter Phone No."
                       />
                     </div>
 
