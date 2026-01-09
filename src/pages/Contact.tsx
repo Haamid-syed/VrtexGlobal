@@ -431,6 +431,39 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6 lg:px-12">
+          <AnimatedSection animation="fade-in-up">
+            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
+              Our Location
+            </h2>
+            <a
+              href="https://www.google.com/maps/search/Mantra+Essence,+Undri,+Pune"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="w-full h-[400px] rounded-lg overflow-hidden border border-border cursor-pointer hover:opacity-90 transition-opacity">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5!2d73.9!3d18.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMantra%20Essence%2C%20Undri%2C%20Pune!5e0!3m2!1sen!2sin!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="VRTEXGLOBAL Location - Mantra Essence, Undri, Pune"
+                ></iframe>
+              </div>
+              <p className="text-center mt-4 text-muted-foreground">
+                Mantra Essence, Undri, Pune - Click to open in Google Maps
+              </p>
+            </a>
+          </AnimatedSection>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
