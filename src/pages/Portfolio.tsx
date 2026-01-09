@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -114,8 +114,6 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
-
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
@@ -142,73 +140,33 @@ to Prototyping support.
       {/* Portfolio Grid */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {projects.map((project, index) => (
               <AnimatedSection
                 key={project.id}
                 animation="fade-in-up"
                 delay={index * 100}
               >
-                <div
-                  className="group relative overflow-hidden bg-background cursor-pointer"
-                  onMouseEnter={() => setHoveredId(project.id)}
-                  onMouseLeave={() => setHoveredId(null)}
-                >
+                <div className="bg-background rounded-lg overflow-hidden">
                   {/* Image */}
-                  <div className="aspect-[3/2] overflow-hidden">
+                  <div className="aspect-[16/9] overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className={`w-full h-full object-cover transition-all duration-500 ${
-                        hoveredId === project.id ? "scale-110 opacity-30" : "scale-100"
-                      }`}
+                      className="w-full h-full object-cover"
                     />
                   </div>
 
-                  {/* Overlay Content */}
-                  <div
-                    className={`absolute inset-0 flex flex-col justify-end p-6 transition-all duration-300 ${
-                      hoveredId === project.id ? "bg-foreground/90" : "bg-transparent"
-                    }`}
-                  >
-                    {/* Always visible title */}
-                    <div
-                      className={`transition-all duration-300 ${
-                        hoveredId === project.id
-                          ? "translate-y-0"
-                          : "translate-y-0"
-                      }`}
-                    >
-                      <span
-                        className={`text-xs font-medium tracking-widest uppercase transition-colors duration-300 ${
-                          hoveredId === project.id
-                            ? "text-gray-400"
-                            : "text-muted-foreground"
-                        }`}
-                      >
-                        {project.category}
-                      </span>
-                      <h3
-                        className={`mt-2 text-lg font-bold transition-colors duration-300 ${
-                          hoveredId === project.id
-                            ? "text-background"
-                            : "text-foreground"
-                        }`}
-                      >
-                        {project.title}
-                      </h3>
-                    </div>
-
-                    {/* Hover description */}
-                    <p
-                      className={`mt-3 text-sm text-gray-300 leading-relaxed transition-all duration-300 ${
-                        hoveredId === project.id
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 translate-y-4"
-                      }`}
-                    >
-                      {project.description}
-                    </p>
+                  {/* Content below image */}
+                  <div className="p-5">
+                    <h3 className="text-lg font-bold text-foreground">
+                      {project.title}
+                    </h3>
+                    {project.description && (
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                        {project.description}
+                      </p>
+                    )}
                   </div>
                 </div>
               </AnimatedSection>
