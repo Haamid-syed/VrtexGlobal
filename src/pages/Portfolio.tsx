@@ -13,6 +13,8 @@ import ppd from "@/assets/ppd.png";
 import smd from "@/assets/smd.png";
 import red from "@/assets/red.jpeg";
 import npd from "@/assets/npd.jpeg";
+import oss from "@/assets/oss.jpeg";
+import da from "@/assets/da.png";
 
 const projects = [
   {
@@ -103,14 +105,20 @@ const projects = [
     //   "CAD Modeling and Mechanical design for Soldering fixture",
     image: npd,
   },
-  // {
-  //   id: 12,
-  //   title: "New Product Development process",
-  //   // category: "Aerospace",
-  //   // description:
-  //   //   "CAD Modeling and Mechanical design for Soldering fixture",
-  //   image: npd,
-  // },
+  {
+    id: 12,
+    title: "Onsite Service",
+    // category: "Aerospace",
+    description: "Get multi-disciplinary experts without the cost of full-time employees. Engage specialized skills for specific project durations",
+    image: oss,
+  },
+  {
+    id: 13,
+    title: "Design Analysis",
+    // category: "Aerospace",
+    description: "To verify design, perform various type of analysis like Structural analysis (Static/Dynamic), Thermal analysis, Environmental test analysis, Vibration analysis, CFD etc",
+    image: da,
+  },
 ];
 
 const Portfolio = () => {
