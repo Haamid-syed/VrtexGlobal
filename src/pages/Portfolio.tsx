@@ -183,7 +183,7 @@ to Prototyping support.
                       {project.title}
                     </h3>
                     {project.description && (
-                      <p className="mt-2 text-md text-muted-foreground leading-relaxed">
+                      <p className="mt-2 text-md text-muted-foreground text-wrap leading-relaxed">
                         {project.description}
                       </p>
                     )}
