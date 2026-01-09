@@ -17,6 +17,7 @@ import {
   Hammer,
   Package,
 } from "lucide-react";
+import srv from "@/assets/serv_page.jpeg"
 
 const services = [
   {
@@ -203,7 +204,16 @@ const Services = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-background">
+      <section className="relative pt-32 pb-20 bg-background overflow-hidden">
+         <div className="absolute inset-0 z-0">
+          <img
+            src={srv}
+            alt="Engineering background"
+            className="w-full h-full object-fill opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/10 to-background" />
+        </div>
+
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
             <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">

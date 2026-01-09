@@ -14,20 +14,20 @@ const About = () => {
           <img
             src={abt}
             alt="Engineering background"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/10 to-background" />
         </div>
 
         <div className="relative z-10 container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
-            <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
+            <span className="text-sm font-medium tracking-widest text-black uppercase">
               About Us
             </span>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
               Precision Engineering,<br />Trusted Results
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-black leading-relaxed">
               VRTEXGLOBAL is a mechanical product design services company dedicated to delivering
               precision-engineered solutions for forward-thinking organizations worldwide.
             </p>
@@ -40,7 +40,7 @@ const About = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="slide-in-left">
-              <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
+              <span className="text-md font-medium tracking-widest text-black uppercase">
                 Who We Are
               </span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-foreground tracking-tight">
@@ -49,14 +49,14 @@ const About = () => {
             </AnimatedSection>
 
             <AnimatedSection animation="slide-in-right" delay={200}>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-black leading-relaxed">
                 Founded on the principles of precision and innovation, VRTEXGLOBAL brings
                 together a team of experienced mechanical engineers, designers, and
                 problem-solvers. We specialize in transforming complex engineering
                 challenges into elegant, manufacturable solutions that drive success
                 for our clients across diverse industries.
               </p>
-              <p className="mt-4 text-muted-foreground leading-relaxed">
+              <p className="mt-4 text-black leading-relaxed">
                 Our expertise spans from initial concept development through to
                 production-ready designs, ensuring every project receives the
                 meticulous attention to detail that defines our work.
