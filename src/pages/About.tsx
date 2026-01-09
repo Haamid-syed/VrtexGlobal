@@ -28,7 +28,7 @@ const About = () => {
               Precision Engineering,<br />Trusted Results
             </h1>
             <p className="mt-6 text-lg text-black leading-relaxed">
-              VRTEXGLOBAL is a mechanical product design services company dedicated to delivering
+              VrtexGlobal is a mechanical product design services company dedicated to delivering
               precision-engineered solutions for forward-thinking organizations worldwide.
             </p>
           </AnimatedSection>
@@ -50,7 +50,7 @@ const About = () => {
 
             <AnimatedSection animation="slide-in-right" delay={200}>
               <p className="text-black leading-relaxed">
-                Founded on the principles of precision and innovation, VRTEXGLOBAL brings
+                Founded on the principles of precision and innovation, VrtexGlobal brings
                 together a team of experienced mechanical engineers, designers, and
                 problem-solvers. We specialize in transforming complex engineering
                 challenges into elegant, manufacturable solutions that drive success

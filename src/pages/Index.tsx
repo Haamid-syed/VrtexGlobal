@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import taximeter from "@/assets/taximeter.png";
-import vt from "@/assets/vehicle-tracking.png";
+import vt from "@/assets/vehicke.jpeg";
 import pd from "@/assets/product design.jpeg";
 import ed from "@/assets/engdes.jpeg";
 

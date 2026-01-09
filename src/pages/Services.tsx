@@ -18,6 +18,7 @@ import {
   Package,
 } from "lucide-react";
 import srv from "@/assets/serv_page.jpeg"
+import define from "@/assets/Define.jpeg"
 
 const services = [
   {
@@ -209,7 +210,7 @@ const Services = () => {
           <img
             src={srv}
             alt="Engineering background"
-            className="w-full h-full object-fill opacity-60"
+            className="w-full h-full object-contain object-right opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/10 to-background" />
         </div>

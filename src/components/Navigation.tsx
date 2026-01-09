@@ -42,7 +42,7 @@ const Navigation = () => {
             className="flex items-center gap-3 hover:opacity-70 transition-opacity duration-300"
           >
             <img src={logo} alt="VRTEXGLOBAL Logo" className="h-14 w-auto" />
-            <span className="text-lg font-bold tracking-wider text-foreground">VRTEXGLOBAL</span>
+            <span className="text-lg font-bold tracking-wider text-foreground">VrtexGlobal</span>
           </Link>
 
           {/* Desktop Navigation */}
