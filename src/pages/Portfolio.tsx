@@ -179,11 +179,11 @@ to Prototyping support.
 
                   {/* Content below image */}
                   <div className="p-5">
-                    <h3 className="text-lg font-bold text-foreground">
+                    <h3 className="text-xl font-bold text-foreground">
                       {project.title}
                     </h3>
                     {project.description && (
-                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                      <p className="mt-2 text-md text-muted-foreground leading-relaxed">
                         {project.description}
                       </p>
                     )}
