@@ -18,7 +18,11 @@ import {
   Package,
 } from "lucide-react";
 import srv from "@/assets/serv_page.jpeg"
-import define from "@/assets/Define.jpeg"
+import defineImg from "@/assets/Define.jpeg"
+import designImg from "@/assets/Design.jpeg"
+import developImg from "@/assets/Develop.jpeg"
+import verifyImg from "@/assets/Verify.jpeg"
+import deliverImg from "@/assets/Deliver.jpeg"
 
 const services = [
   {
@@ -313,15 +317,17 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {[
-              { step: "01", title: "Define", desc: "Understanding your requirements and objectives" },
-              { step: "02", title: "Design", desc: "Creating innovative solutions with precision" },
-              { step: "03", title: "Develop", desc: "Develop for breakthrough ideas" },
-              { step: "04", title: "Verify", desc: "Rigorous analysis and testing verification" },
-              { step: "05", title: "Deliver", desc: "Production-ready data and support" },
+              { img: defineImg, title: "Define", desc: "Understanding your requirements and objectives" },
+              { img: designImg, title: "Design", desc: "Creating innovative solutions with precision" },
+              { img: developImg, title: "Develop", desc: "Develop for breakthrough ideas" },
+              { img: verifyImg, title: "Verify", desc: "Rigorous analysis and testing verification" },
+              { img: deliverImg, title: "Deliver", desc: "Production-ready data and support" },
             ].map((item, index) => (
-              <AnimatedSection key={item.step} animation="fade-in-up" delay={index * 150}>
+              <AnimatedSection key={item.title} animation="fade-in-up" delay={index * 150}>
                 <div className="text-center">
-                  <span className="text-6xl font-bold text-gray-200">{item.step}</span>
+                  <div className="w-24 h-24 mx-auto mb-4">
+                    <img src={item.img} alt={item.title} className="w-full h-full object-contain" />
+                  </div>
                   <h3 className="mt-4 text-lg font-bold text-foreground">{item.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{item.desc}</p>
                 </div>
