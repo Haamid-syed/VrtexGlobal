@@ -16,6 +16,7 @@ import red from "@/assets/red.jpeg";
 import npd from "@/assets/npd.jpeg";
 import oss from "@/assets/oss.jpeg";
 import da from "@/assets/da.png";
+import port_bg from "@/assets/port_bg.jpeg";
 
 const projects = [
   {
@@ -136,16 +137,24 @@ const Portfolio = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-background">
+      <section className="relative pt-32 pb-20 bg-background overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={port_bg}
+            alt="Engineering background"
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/10 to-background" />
+        </div>
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
-            <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
+            <span className="text-sm font-medium tracking-widest text-black uppercase">
               Our Work
             </span>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
               Portfolio
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-black leading-relaxed">
               <strong>VrtexGlobal</strong> is an Automotive, Industrial Product design and development 
 Service providing firm which provides designing services from concept 
 to Prototyping support. 

@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Send, CheckCircle, FileText } from "lucide-react";
+import contact from "@/assets/contact_bg.jpeg"
 
 const serviceOptions = [
   { value: "", label: "Select a service" },
@@ -117,18 +118,27 @@ const Contact = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      <section className="pt-32 pb-20 bg-background">
+
+        <section className="relative pt-32 pb-20 bg-background overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={contact}
+            alt="Engineering background"
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/10 to-background" />
+        </div>
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection className="max-w-3xl">
-            <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
+            <span className="text-sm font-medium tracking-widest text-black uppercase">
               Get in Touch
             </span>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
               Contact Us
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-black leading-relaxed">
               Ready to start your next engineering project? We'd love to hear from you.
-              Reach out and let's discuss how VRTEXGLOBAL can help bring your vision to life.
+              Reach out and let's discuss how <strong> VrtexGlobal</strong>  can help bring your vision to life.
             </p>
           </AnimatedSection>
         </div>
@@ -459,7 +469,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="VRTEXGLOBAL Location - Mantra Essence, Undri, Pune"
+                  title="VrtexGlobal Location - Mantra Essence, Undri, Pune"
                 ></iframe>
               </div>
             </a>

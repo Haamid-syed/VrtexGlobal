@@ -13,6 +13,12 @@ import { ArrowRight, Cpu, Cog, PenTool, Layers, Settings } from "lucide-react";
 
 const slides = [
   {
+    image: pd,
+    tagline: "Product Design & Development",
+    description:
+      "Transforming ideas into manufacturable products with a focus on innovation, quality, and market readiness.",
+  },
+  {
     image: vt,
     tagline: "Automotive Product Design",
     description:
@@ -24,12 +30,7 @@ const slides = [
     description:
       "We design and develop custom enclosures for worldwide clients, industries like Consumer Electronics, Appliance products, Medical Equipments, LED lighting products, Automotive products, etc.",
   },
-  {
-    image: pd,
-    tagline: "Product Design & Development",
-    description:
-      "Transforming ideas into manufacturable products with a focus on innovation, quality, and market readiness.",
-  },
+  
   {
     image: ed,
     tagline: "Engineering Design",
@@ -100,7 +101,7 @@ const Index = () => {
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-background">
-                VRTEXGLOBAL
+                VrtexGlobal
               </h1>
               <p className="mt-4 text-lg md:text-xl text-background/90 tracking-wide">
                 {slides[currentSlide].tagline}
@@ -197,13 +198,13 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="slide-in-left">
               <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
-                Why VRTEXGLOBAL
+                Why VrtexGlobal
               </span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-foreground tracking-tight">
                 Engineering Excellence,<br />Delivered Precisely
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                At VRTEXGLOBAL, we combine deep technical expertise with innovative
+                At VrtexGlobal, we combine deep technical expertise with innovative
                 problem-solving to deliver product design solutions that exceed
                 expectations. Our commitment to precision and quality ensures every
                 project meets the highest industry standards.
