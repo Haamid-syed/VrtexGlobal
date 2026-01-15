@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -199,6 +199,23 @@ const services = [
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.substring(1);
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          element.classList.add("ring-2", "ring-foreground", "ring-offset-2");
+          setTimeout(() => {
+            element.classList.remove("ring-2", "ring-foreground", "ring-offset-2");
+          }, 2000);
+        }
+      }, 300);
+    }
+  }, [location]);
 
   const handleServiceClick = (slug: string) => {
     navigate(`/portfolio#${slug}`);
@@ -247,6 +264,7 @@ const Services = () => {
                 delay={index * 100}
               >
                 <div
+                  id={service.slug}
                   className="group relative bg-background border border-border p-8 min-h-[320px] transition-all duration-500 overflow-hidden cursor-pointer"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}

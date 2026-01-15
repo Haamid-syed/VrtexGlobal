@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -49,31 +49,37 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const navigate = useNavigate();
+
   const services = [
     {
       icon: PenTool,
       title: "Product Design",
+      slug: "product-design",
       description: "End-to-end product design from concept to market-ready solutions",
     },
-    
     {
       icon: Layers,
       title: "Automotive Design",
+      slug: "automotive-design",
       description: "Specialized automotive components like instrument cluster, vehicle tracking system, automotive display design solutions",
     },
     {
       icon: Cpu,
       title: "Engineering Design",
+      slug: "mechanical-engineering",
       description: "Complex product engineering design and development ready to market.",
     },
     {
       icon: Settings,
       title: "Enclosure Design",
+      slug: "enclosure-design",
       description: "Enclosure design with aesthetic, ergonomic and eviromental friendly.",
     },
     {
       icon: Settings,
       title: "Prototype Services",
+      slug: "prototyping",
       description: "Prototype development for breakthrough ideas.",
     },
   ];
@@ -168,7 +174,10 @@ const Index = () => {
                 animation="fade-in-up"
                 delay={index * 100}
               >
-                <div className="group bg-background p-8 border border-border hover:border-foreground transition-all duration-300 h-full">
+                <div 
+                  className="group bg-background p-8 border border-border hover:border-foreground transition-all duration-300 h-full cursor-pointer"
+                  onClick={() => navigate(`/services#${service.slug}`)}
+                >
                   <service.icon className="w-8 h-8 text-foreground mb-6 group-hover:scale-110 transition-transform duration-300" />
                   <h3 className="text-lg font-semibold text-foreground mb-3">
                     {service.title}
