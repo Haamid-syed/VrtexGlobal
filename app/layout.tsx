@@ -1,10 +1,7 @@
+// app/layout.tsx
 import "./globals.css";
-
-export const metadata = {
-  title: "Vertex Labs – Mechanical Engineering Services in Pune",
-  description:
-    "Precision CNC machining, fabrication, and mechanical engineering services in Undri, Pune.",
-};
+import Navbar from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -12,8 +9,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en-IN">
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
