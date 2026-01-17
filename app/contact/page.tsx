@@ -4,7 +4,7 @@ import { useState } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Send, CheckCircle, FileText } from "lucide-react";
+import { Mail, MapPin, Phone, Send, CheckCircle, MessageCircle, FileText } from "lucide-react";
 
 const serviceOptions = [
   { value: "", label: "Select a service" },
@@ -139,6 +139,8 @@ export default function ContactPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      
 
       {/* Contact Form & Quote Section */}
       <section className="py-20 bg-secondary">
@@ -439,9 +441,107 @@ export default function ContactPage() {
                 )}
               </div>
             </AnimatedSection>
+            
           </div>
         </div>
       </section>
+
+      <section className="py-4 bg-secondary" >
+        <div className="container mx-auto px-6 lg:px-24">
+
+          <AnimatedSection animation="slide-in-right" delay={200}>
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-2xl font-bold text-foreground mb-6">
+                    Contact Information
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Have questions about our services or want to discuss a potential
+                    project? We're here to help. Reach out through any of the
+                    channels below.
+                  </p>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-foreground">
+                      <Mail className="w-5 h-5 text-background" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">Email</h3>
+                      <a 
+                        href="mailto:info@vrtexglobal.com"
+                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                      >
+                        info@vrtexglobal.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-foreground">
+                      <Phone className="w-5 h-5 text-background" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">Phone</h3>
+                      <a 
+                        href="tel:+919975613695"
+                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                      >
+                         +91 9975613695 
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-foreground">
+                      <MessageCircle className="w-5 h-5 text-background" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">WhatsApp</h3>
+                      <a 
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                      >
+                        Chat with us on WhatsApp
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-foreground">
+                      <MapPin className="w-5 h-5 text-background" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">Location</h3>
+                      <p className="text-muted-foreground mt-1">
+                        Undri, Pune<br />
+                        India
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-8 border-t border-border">
+                  <h3 className="font-semibold text-foreground mb-4">Business Hours</h3>
+                  <div className="space-y-2 text-sm text-muted-foreground">
+                    <div className="flex justify-between">
+                      <span>Monday - Friday</span>
+                      <span>9:00 AM - 6:00 PM PST</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Saturday - Sunday</span>
+                      <span>Closed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+        </div>
+      </section>
+      
 
       {/* Map Section */}
       <section className="py-20 bg-background">
