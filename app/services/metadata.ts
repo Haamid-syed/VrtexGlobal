@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     title: "Engineering Services & CAD Modeling | VrtexGlobal",
     description:
       "Comprehensive mechanical engineering design and development services in Undri, Pune",
-    url: "https://VrtexGlobal.com/services",
+    url: "https://vrtexglobal.com/services",
     type: "website",
   },
   alternates: {
-    canonical: "https://VrtexGlobal.com/services",
+    canonical: "https://vrtexglobal.com/services",
   },
 };

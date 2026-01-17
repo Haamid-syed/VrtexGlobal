@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     title: "About Us | VrtexGlobal",
     description:
       "VrtexGlobal - 15+ years of excellence in mechanical engineering and product design",
-    url: "https://VrtexGlobal.com/about",
+    url: "https://vrtexglobal.com/about",
     type: "website",
   },
   alternates: {
-    canonical: "https://VrtexGlobal.com/about",
+    canonical: "https://vrtexglobal.com/about",
   },
 };

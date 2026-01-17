@@ -9,7 +9,7 @@ User-agent: GPTBot
 Disallow: /
 
 # Host
-Host: https://VrtexGlobal.com
+Host: https://vrtexglobal.com
 
 # Sitemaps
-Sitemap: https://VrtexGlobal.com/sitemap.xml
+Sitemap: https://vrtexglobal.com/sitemap.xml

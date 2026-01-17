@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     title: "Portfolio & Projects | VrtexGlobal",
     description:
       "Browse our successful mechanical engineering and product design projects completed for global clients",
-    url: "https://VrtexGlobal.com/portfolio",
+    url: "https://vrtexglobal.com/portfolio",
     type: "website",
   },
   alternates: {
-    canonical: "https://VrtexGlobal.com/portfolio",
+    canonical: "https://vrtexglobal.com/portfolio",
   },
 };
