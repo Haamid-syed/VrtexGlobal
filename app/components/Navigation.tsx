@@ -43,7 +43,7 @@ const Navigation = () => {
             href="/"
             className="flex items-center gap-3 hover:opacity-70 transition-opacity duration-300"
           >
-            <img src="/images/logo.jpeg" alt="VRTEXGLOBAL Logo" className="h-14 w-auto" />
+            <img src="/images/logo.jpeg" alt="VrtexGlobal Logo" className="h-14 w-auto" />
             <span className="text-lg font-bold tracking-wider text-foreground">VrtexGlobal</span>
           </Link>
 

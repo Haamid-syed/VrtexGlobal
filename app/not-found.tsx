@@ -46,8 +46,8 @@ export default function NotFound() {
               +91 9975 613 695
             </a>
             <span className="hidden sm:inline text-border">|</span>
-            <a href="mailto:info@vrtexglobal.com" className="text-foreground hover:text-muted-foreground transition">
-              info@vrtexglobal.com
+            <a href="mailto:info@VrtexGlobal.com" className="text-foreground hover:text-muted-foreground transition">
+              info@VrtexGlobal.com
             </a>
           </div>
         </div>

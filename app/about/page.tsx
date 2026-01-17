@@ -116,7 +116,7 @@ export default function AboutPage() {
               Core Values
             </h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide every decision and design at VRTEXGLOBAL
+              The principles that guide every decision and design at VrtexGlobal
             </p>
           </AnimatedSection>
 

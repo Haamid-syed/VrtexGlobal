@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio & Projects | VRTEXGLOBAL",
+  title: "Portfolio & Projects | VrtexGlobal",
   description:
-    "Explore VRTEXGLOBAL's portfolio of 150+ successfully completed mechanical engineering and product design projects across automotive, industrial, and medical sectors in Pune.",
+    "Explore VrtexGlobal's portfolio of 150+ successfully completed mechanical engineering and product design projects across automotive, industrial, and medical sectors in Pune.",
   keywords: [
     "engineering projects",
     "design portfolio",
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "engineering portfolio pune",
   ],
   openGraph: {
-    title: "Portfolio & Projects | VRTEXGLOBAL",
+    title: "Portfolio & Projects | VrtexGlobal",
     description:
       "Browse our successful mechanical engineering and product design projects completed for global clients",
-    url: "https://vrtexglobal.com/portfolio",
+    url: "https://VrtexGlobal.com/portfolio",
     type: "website",
   },
   alternates: {
-    canonical: "https://vrtexglobal.com/portfolio",
+    canonical: "https://VrtexGlobal.com/portfolio",
   },
 };

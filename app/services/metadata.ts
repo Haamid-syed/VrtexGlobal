@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Engineering Services & CAD Modeling | VRTEXGLOBAL",
+  title: "Engineering Services & CAD Modeling | VrtexGlobal",
   description:
     "Professional mechanical engineering services in Pune including CAD modeling, FEA analysis, automotive design, enclosure design, prototyping, and reverse engineering.",
   keywords: [
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "sheet metal design",
   ],
   openGraph: {
-    title: "Engineering Services & CAD Modeling | VRTEXGLOBAL",
+    title: "Engineering Services & CAD Modeling | VrtexGlobal",
     description:
       "Comprehensive mechanical engineering design and development services in Undri, Pune",
-    url: "https://vrtexglobal.com/services",
+    url: "https://VrtexGlobal.com/services",
     type: "website",
   },
   alternates: {
-    canonical: "https://vrtexglobal.com/services",
+    canonical: "https://VrtexGlobal.com/services",
   },
 };

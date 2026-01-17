@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: process.env.SITE_URL || "https://vrtexglobal.com",
+  siteUrl: process.env.SITE_URL || "https://VrtexGlobal.com",
   generateRobotsTxt: true,
   generateIndexSitemap: true,
   sitemapSize: 7000,

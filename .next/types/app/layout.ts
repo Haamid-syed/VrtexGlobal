@@ -1,4 +1,4 @@
-// File: /Users/haamidsyed/Documents/coding projects/vrtexlabs/app/layout.tsx
+// File: /Users/haamidsyed/Documents/coding projects/VrtexGlobal/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

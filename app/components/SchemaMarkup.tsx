@@ -6,12 +6,12 @@ export function SchemaMarkup() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "VRTEXGLOBAL",
-    image: "https://vrtexglobal.com/logo.jpeg",
+    name: "VrtexGlobal",
+    image: "https://VrtexGlobal.com/logo.jpeg",
     description: "Mechanical engineering design and product development services in Pune",
-    url: "https://vrtexglobal.com",
+    url: "https://VrtexGlobal.com",
     telephone: "+91-9975613695",
-    email: "info@vrtexglobal.com",
+    email: "info@VrtexGlobal.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Undri",
@@ -41,9 +41,9 @@ export function SchemaMarkup() {
       },
     ],
     sameAs: [
-      "https://www.facebook.com/vrtexglobal",
-      "https://www.linkedin.com/company/vrtexglobal",
-      "https://twitter.com/vrtexglobal",
+      "https://www.facebook.com/VrtexGlobal",
+      "https://www.linkedin.com/company/VrtexGlobal",
+      "https://twitter.com/VrtexGlobal",
     ],
     areaServed: [
       {
@@ -64,9 +64,9 @@ export function SchemaMarkup() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "VRTEXGLOBAL - Mechanical Design Services",
+    name: "VrtexGlobal - Mechanical Design Services",
     description: "Comprehensive mechanical engineering design and development services",
-    url: "https://vrtexglobal.com/services",
+    url: "https://VrtexGlobal.com/services",
     hasOfferingDescription: [
       {
         "@type": "Service",

@@ -1,8 +1,8 @@
-// File: /Users/haamidsyed/Documents/coding projects/vrtexlabs/app/services/page.tsx
-import * as entry from '../../../../app/services/page.js'
+// File: /Users/haamidsyed/Documents/coding projects/VrtexGlobal/app/contact/page.tsx
+import * as entry from '../../../../app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/services/page.js')
+type TEntry = typeof import('../../../../app/contact/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

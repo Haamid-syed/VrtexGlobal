@@ -57,9 +57,10 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li>info@vrtexglobal.com</li>
+              <li>info@VrtexGlobal.com</li>
               <li>9975613695</li>
               <li>Undri, Pune</li>
+              <li>India</li>
             </ul>
           </div>
         </div>
@@ -69,7 +70,7 @@ const Footer = () => {
             © {new Date().getFullYear()} VrtexGlobal. All rights reserved.
           </p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
-            <span className="text-gray-500 text-sm">Precision Engineering</span>
+            <span className="text-gray-500 text-sm"></span>
           </div>
         </div>
       </div>

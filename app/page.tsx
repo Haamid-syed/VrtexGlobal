@@ -125,7 +125,7 @@ export default function HomePage() {
                   className="border-background text-background hover:bg-background hover:text-foreground"
                   asChild
                 >
-                  <Link href="/contact">Contact VRTEXGLOBAL</Link>
+                  <Link href="/contact">Contact VrtexGlobal</Link>
                 </Button>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function HomePage() {
               Ready to Start Your Project?
             </h2>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-              Let's discuss how VRTEXGLOBAL can bring your product design ideas to physical product
+              Let's discuss how VrtexGlobal can bring your product design ideas to physical product
               with precision and innovation.
             </p>
             <div className="mt-8">
