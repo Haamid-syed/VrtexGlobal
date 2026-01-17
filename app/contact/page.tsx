@@ -446,11 +446,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-4 bg-secondary" >
+      <section className="py-12 bg-background" >
         <div className="container mx-auto px-6 lg:px-24">
 
           <AnimatedSection animation="slide-in-right" delay={200}>
-              <div className="space-y-8">
+              <div className="space-y-8  ">
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-6">
                     Contact Information
