@@ -40,11 +40,11 @@ export function SchemaMarkup() {
         closes: "14:00",
       },
     ],
-    sameAs: [
-      "https://www.facebook.com/VrtexGlobal",
-      "https://www.linkedin.com/company/VrtexGlobal",
-      "https://twitter.com/VrtexGlobal",
-    ],
+    // sameAs: [
+    //   "https://www.facebook.com/VrtexGlobal",
+    //   "https://www.linkedin.com/company/VrtexGlobal",
+    //   "https://twitter.com/VrtexGlobal",
+    // ],
     areaServed: [
       {
         "@type": "City",

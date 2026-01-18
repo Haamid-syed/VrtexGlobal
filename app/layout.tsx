@@ -6,6 +6,10 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "VrtexGlobal – Mechanical Engineering Services in Pune, Undri",
   description: "Precision mechanical engineering services in Pune, Undri. Design, fabrication, and consulting for industrial projects.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "VrtexGlobal – Mechanical Engineering Services in Pune, Undri",
     description: "Precision mechanical engineering services in Pune, Undri. Design, fabrication, and consulting for industrial projects.",
