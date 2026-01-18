@@ -8,8 +8,15 @@ export const metadata: Metadata = {
     "contact VrtexGlobal",
     "mechanical design services contact",
     "engineering services pune contact",
+    "mechanical design services in pune",
+    "mechanical design services in maharashtra",
+    "mechanical design services in india",
     "CAD design quote",
-    "Undri, Pune"
+    "Undri, Pune",
+    "Kondhwa, Pune",
+    "pune",
+    "maharashtra",
+    "india"
   ],
   openGraph: {
   siteName: "VrtexGlobal",
