@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://vrtexglobal.com/services",
+    canonical: "https://www.vrtexglobal.com/services",
   },
   authors: [{ name: "VrtexGlobal Engineering Team" }],
   robots: {

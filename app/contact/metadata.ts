@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   title: "Contact Us | VrtexGlobal",
   description:
     "Get in touch with VrtexGlobal for your mechanical design and engineering needs",
-  url: "https://vrtexglobal.com/contact",
+  url: "https://www.vrtexglobal.com/contact",
   type: "website",
 },
 
   alternates: {
-    canonical: "https://vrtexglobal.com/contact",
+    canonical: "https://www.vrtexglobal.com/contact",
   },
   robots: {
   index: true,

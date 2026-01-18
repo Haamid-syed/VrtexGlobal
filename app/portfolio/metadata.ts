@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     title: "Portfolio & Engineering Projects in Pune | VrtexGlobal (India & Global)",
     description:
       "Browse our successful mechanical engineering and product design projects completed for global clients",
-    url: "https://vrtexglobal.com/portfolio",
+    url: "https://www.vrtexglobal.com/portfolio",
     type: "website",
   },
   alternates: {
-    canonical: "https://vrtexglobal.com/portfolio",
+    canonical: "https://www.vrtexglobal.com/portfolio",
   },
   authors: [{ name: "VrtexGlobal Engineering Team" }],
   robots: {
