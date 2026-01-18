@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Aerospace engineering design",
     "Industrial equipment design services",
     "Consumer product design engineering",
-    "Medical device engineering design"
+    "Medical device engineering design",
   ],
   openGraph: {
     title: "About Us | VrtexGlobal",

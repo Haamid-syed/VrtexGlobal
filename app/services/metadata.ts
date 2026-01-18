@@ -35,5 +35,4 @@ export const metadata: Metadata = {
   "geo.region": "IN-MH",
   "geo.placename": "Undri, Pune",
 },
-
 };
