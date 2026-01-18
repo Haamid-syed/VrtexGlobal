@@ -1,15 +1,9 @@
-# *
 User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /api
 
-# GPTBot
 User-agent: GPTBot
 Disallow: /
 
-# Host
-Host: https://www.vrtexglobal.com
-
-# Sitemaps
 Sitemap: https://www.vrtexglobal.com/sitemap.xml
