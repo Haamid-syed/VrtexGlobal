@@ -9,7 +9,7 @@ export function SchemaMarkup() {
     name: "VrtexGlobal",
     image: "https://VrtexGlobal.com/logo.jpeg",
     description: "Mechanical engineering design and product development services in Pune",
-    url: "https://VrtexGlobal.com",
+    url: "https://www.vrtexglobal.com",
     telephone: "+91-9975613695",
     email: "info@VrtexGlobal.com",
     address: {
@@ -67,7 +67,7 @@ export function SchemaMarkup() {
     "@type": "ProfessionalService",
     name: "VrtexGlobal - Mechanical Design Services",
     description: "Comprehensive mechanical engineering design and development services",
-    url: "https://VrtexGlobal.com/services",
+    url: "https://www.vrtexglobal.com/services",
     hasOfferingDescription: [
       {
         "@type": "Service",
