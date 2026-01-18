@@ -464,8 +464,8 @@ export default function ContactPage() {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-foreground">
-                      <Mail className="w-5 h-5 text-background" />
+                    <div className="p-3">
+                          <img src="/images/icons/gmail.webp" width="32" height="32" alt="Gmail"></img>
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
@@ -479,8 +479,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-foreground">
-                      <Phone className="w-5 h-5 text-background" />
+                    <div className="p-3">
+                      <img src="/images/icons/phone.png" width="28" height="28" alt="Phone"></img>
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Phone</h3>
@@ -494,8 +494,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-foreground">
-                      <MessageCircle className="w-5 h-5 text-background" />
+                    <div className="p-3">
+                      <img src="/images/icons/WhatsApp.webp" width="42" height="42" alt="Whatsapp"></img>
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">WhatsApp</h3>
@@ -511,8 +511,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-foreground">
-                      <MapPin className="w-5 h-5 text-background" />
+                    <div className="p-3">
+                      <img src="/images/icons/location.png" width="28" height="28" alt="Location"></img>
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Location</h3>
