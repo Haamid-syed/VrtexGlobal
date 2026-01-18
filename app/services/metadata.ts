@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "sheet metal design",
   ],
   openGraph: {
+    siteName: "VrtexGlobal",
     title: "Engineering Services & CAD Modeling | VrtexGlobal",
     description:
       "Comprehensive mechanical engineering design and development services in Undri, Pune",
@@ -26,4 +27,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vrtexglobal.com/services",
   },
+  authors: [{ name: "VrtexGlobal Engineering Team" }],
+  robots: {
+  index: true,
+  follow: true,
+}, other: {
+  "geo.region": "IN-MH",
+  "geo.placename": "Undri, Pune",
+},
+
 };

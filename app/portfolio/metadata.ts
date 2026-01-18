@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     "engineering portfolio pune",
   ],
   openGraph: {
-    title: "Portfolio & Projects | VrtexGlobal",
+    siteName: "VrtexGlobal",
+    title: "Portfolio & Engineering Projects in Pune | VrtexGlobal (India & Global)",
     description:
       "Browse our successful mechanical engineering and product design projects completed for global clients",
     url: "https://vrtexglobal.com/portfolio",
@@ -23,4 +24,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vrtexglobal.com/portfolio",
   },
+  authors: [{ name: "VrtexGlobal Engineering Team" }],
+  robots: {
+  index: true,
+  follow: true,
+},
+other: {
+  "geo.region": "IN-MH",
+  "geo.placename": "Undri, Pune",
+},
+
 };

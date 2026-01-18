@@ -58,6 +58,7 @@ export function SchemaMarkup() {
         "@type": "Country",
         name: "India",
       },
+      { "@type": "AdministrativeArea", "name": "Global" }
     ],
   };
 
