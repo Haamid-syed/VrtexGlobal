@@ -9,6 +9,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: "Vrtex Global – Mechanical Design Engineering Services in Pune, Undri",
