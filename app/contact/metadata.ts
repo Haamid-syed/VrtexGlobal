@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "mechanical design services in india",
     "vrtexglobal undri",
     "vrtexglobal pune",
-    "CAD design quote",
+    "CAD design serices",
     "Undri, Pune",
     "Kondhwa, Pune",
     "pune",
