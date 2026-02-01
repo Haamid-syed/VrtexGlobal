@@ -7,6 +7,7 @@ export function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "VrtexGlobal",
+    "alternateName": "Vrtex Global",
     logo: "https://VrtexGlobal.com/logo.jpeg",
     description: "Mechanical engineering design and product development services in Pune",
     url: "https://www.vrtexglobal.com",
