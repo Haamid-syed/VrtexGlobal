@@ -46,6 +46,7 @@ export default function ContactPage() {
     phone: "",
     service: "",
     message: "",
+    fax: "", // Honeypot field
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -57,6 +58,7 @@ export default function ContactPage() {
     company: "",
     service: "",
     projectDetails: "",
+    fax: "", // Honeypot field
   });
   const [isQuoteSubmitting, setIsQuoteSubmitting] = useState(false);
   const [isQuoteSubmitted, setIsQuoteSubmitted] = useState(false);
@@ -72,6 +74,13 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Honeypot check
+    if (formData.fax) {
+      console.log("Bot detected. Submission blocked.");
+      return; 
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -95,7 +104,7 @@ export default function ContactPage() {
 
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", service: "", message: "", fax: "" });
       }, 3000);
     } catch (error) {
       console.error('Email send failed:', error);
@@ -115,6 +124,13 @@ export default function ContactPage() {
 
   const handleQuoteSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Honeypot check
+    if (quoteData.fax) {
+      console.log("Bot detected. Submission blocked.");
+      return; 
+    }
+
     setIsQuoteSubmitting(true);
 
     try {
@@ -139,7 +155,7 @@ export default function ContactPage() {
 
       setTimeout(() => {
         setIsQuoteSubmitted(false);
-        setQuoteData({ name: "", email: "", phone: "", company: "", service: "", projectDetails: "" });
+        setQuoteData({ name: "", email: "", phone: "", company: "", service: "", projectDetails: "", fax: "" });
       }, 3000);
     } catch (error) {
       console.error('Email send failed:', error);
@@ -210,6 +226,15 @@ export default function ContactPage() {
                       >
                         Name
                       </label>
+                      <input
+                        type="text"
+                        name="fax" // Honeypot
+                        value={formData.fax}
+                        onChange={handleChange}
+                        style={{ display: 'none' }}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
                       <input
                         type="text"
                         id="name"
@@ -341,6 +366,15 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleQuoteSubmit} className="space-y-5">
+                    <input
+                        type="text"
+                        name="fax" // Honeypot
+                        value={quoteData.fax} // Assuming quoteData has fax
+                        onChange={handleQuoteChange}
+                        style={{ display: 'none' }}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label
