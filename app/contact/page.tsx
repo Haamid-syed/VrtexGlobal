@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Mail, MapPin, Phone, Send, CheckCircle, MessageCircle, FileText } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 const serviceOptions = [
   { value: "", label: "Select a service" },
@@ -73,16 +74,34 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+          type: 'General Contact',
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast.success("Message sent successfully!");
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      toast.success("Message sent successfully!");
 
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
-    }, 3000);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+      }, 3000);
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setIsSubmitting(false);
+      toast.error("Failed to send message. Please try again.");
+    }
   };
 
   const handleQuoteChange = (
@@ -98,16 +117,35 @@ export default function ContactPage() {
     e.preventDefault();
     setIsQuoteSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: quoteData.name,
+          from_email: quoteData.email,
+          phone: quoteData.phone,
+          company: quoteData.company,
+          service: quoteData.service,
+          message: quoteData.projectDetails,
+          type: 'Quote Request',
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
 
-    setIsQuoteSubmitting(false);
-    setIsQuoteSubmitted(true);
-    toast.success("Quote request submitted successfully!");
+      setIsQuoteSubmitting(false);
+      setIsQuoteSubmitted(true);
+      toast.success("Quote request submitted successfully!");
 
-    setTimeout(() => {
-      setIsQuoteSubmitted(false);
-      setQuoteData({ name: "", email: "", phone: "", company: "", service: "", projectDetails: "" });
-    }, 3000);
+      setTimeout(() => {
+        setIsQuoteSubmitted(false);
+        setQuoteData({ name: "", email: "", phone: "", company: "", service: "", projectDetails: "" });
+      }, 3000);
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setIsQuoteSubmitting(false);
+      toast.error("Failed to submit quote request. Please try again.");
+    }
   };
 
   const whatsappNumber = "9975613695";
