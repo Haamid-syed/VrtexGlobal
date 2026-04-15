@@ -13,13 +13,13 @@ export default function NotFound() {
             404
           </span>
         </div>
-        
+
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
           Page Not Found
         </h1>
-        
+
         <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-          The page you're looking for doesn't exist or has been moved. 
+          The page you're looking for doesn't exist or has been moved.
           Let's get you back on track.
         </p>
 
@@ -42,8 +42,8 @@ export default function NotFound() {
             Need help? Contact us:
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
-            <a href="tel:+919975613695" className="text-foreground hover:text-muted-foreground transition">
-              +91 9975 613 695
+            <a href="tel:+919XXXXXXX" className="text-foreground hover:text-muted-foreground transition">
+              +91 919XXXXXXX
             </a>
             <span className="hidden sm:inline text-border">|</span>
             <a href="mailto:info@VrtexGlobal.com" className="text-foreground hover:text-muted-foreground transition">

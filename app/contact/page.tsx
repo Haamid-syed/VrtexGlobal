@@ -74,11 +74,11 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Honeypot check
     if (formData.fax) {
       console.log("Bot detected. Submission blocked.");
-      return; 
+      return;
     }
 
     setIsSubmitting(true);
@@ -128,7 +128,7 @@ export default function ContactPage() {
     // Honeypot check
     if (quoteData.fax) {
       console.log("Bot detected. Submission blocked.");
-      return; 
+      return;
     }
 
     setIsQuoteSubmitting(true);
@@ -194,7 +194,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      
+
 
       {/* Contact Form & Quote Section */}
       <section className="py-20 bg-secondary">
@@ -367,14 +367,14 @@ export default function ContactPage() {
                 ) : (
                   <form onSubmit={handleQuoteSubmit} className="space-y-5">
                     <input
-                        type="text"
-                        name="fax" // Honeypot
-                        value={quoteData.fax} // Assuming quoteData has fax
-                        onChange={handleQuoteChange}
-                        style={{ display: 'none' }}
-                        tabIndex={-1}
-                        autoComplete="off"
-                      />
+                      type="text"
+                      name="fax" // Honeypot
+                      value={quoteData.fax} // Assuming quoteData has fax
+                      onChange={handleQuoteChange}
+                      style={{ display: 'none' }}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label
@@ -513,7 +513,7 @@ export default function ContactPage() {
                 )}
               </div>
             </AnimatedSection>
-            
+
           </div>
         </div>
       </section>
@@ -522,98 +522,98 @@ export default function ContactPage() {
         <div className="container mx-auto px-6 lg:px-24">
 
           <AnimatedSection animation="slide-in-right" delay={200}>
-              <div className="space-y-8  ">
-                <div>
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
-                    Contact Information
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Have questions about our services or want to discuss a potential
-                    project? We're here to help. Reach out through any of the
-                    channels below.
-                  </p>
-                </div>
+            <div className="space-y-8  ">
+              <div>
+                <h2 className="text-2xl font-bold text-foreground mb-6">
+                  Contact Information
+                </h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Have questions about our services or want to discuss a potential
+                  project? We're here to help. Reach out through any of the
+                  channels below.
+                </p>
+              </div>
 
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3">
-                          <img src="/images/icons/gmail.webp" width="32" height="32" alt="Gmail"></img>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Email</h3>
-                      <a 
-                        href="mailto:info@vrtexglobal.com"
-                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
-                      >
-                        info@vrtexglobal.com
-                      </a>
-                    </div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3">
+                    <img src="/images/icons/gmail.webp" width="32" height="32" alt="Gmail"></img>
                   </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3">
-                      <img src="/images/icons/phone.png" width="28" height="28" alt="Phone"></img>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Phone</h3>
-                      <a 
-                        href="tel:+919975613695"
-                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
-                      >
-                         +91 9975613695 
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3">
-                      <img src="/images/icons/WhatsApp.webp" width="42" height="42" alt="Whatsapp"></img>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">WhatsApp</h3>
-                      <a 
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
-                      >
-                        Chat with us on WhatsApp
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3">
-                      <img src="/images/icons/location.png" width="28" height="28" alt="Location"></img>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Location</h3>
-                      <p className="text-muted-foreground mt-1">
-                        Undri, Pune<br />
-                        India
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Email</h3>
+                    <a
+                      href="mailto:info@vrtexglobal.com"
+                      className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                    >
+                      info@vrtexglobal.com
+                    </a>
                   </div>
                 </div>
 
-                <div className="pt-8 border-t border-border">
-                  <h3 className="font-semibold text-foreground mb-4">Business Hours</h3>
-                  <div className="space-y-2 text-sm text-muted-foreground">
-                    <div className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span>9:00 AM - 6:00 PM PST</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday - Sunday</span>
-                      <span>Closed</span>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3">
+                    <img src="/images/icons/phone.png" width="28" height="28" alt="Phone"></img>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Phone</h3>
+                    <a
+                      href="tel:+9199xxxxxxxx"
+                      className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                    >
+                      +91 9199xxxxxxxx
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3">
+                    <img src="/images/icons/WhatsApp.webp" width="42" height="42" alt="Whatsapp"></img>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">WhatsApp</h3>
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground mt-1 hover:text-foreground transition-colors"
+                    >
+                      Chat with us on WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3">
+                    <img src="/images/icons/location.png" width="28" height="28" alt="Location"></img>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Location</h3>
+                    <p className="text-muted-foreground mt-1">
+                      Undri, Pune<br />
+                      India
+                    </p>
                   </div>
                 </div>
               </div>
-            </AnimatedSection>
+
+              <div className="pt-8 border-t border-border">
+                <h3 className="font-semibold text-foreground mb-4">Business Hours</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex justify-between">
+                    <span>Monday - Friday</span>
+                    <span>9:00 AM - 6:00 PM PST</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Saturday - Sunday</span>
+                    <span>Closed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
-      
+
 
       {/* Map Section */}
       <section className="py-20 bg-background">
